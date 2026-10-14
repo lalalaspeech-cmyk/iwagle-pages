@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fafbf9"><title>언어의 바다 · 도전! 1분스피치</title><meta name="description" content="주제를 살펴보고, 생각하고, 나의 이야기를 말해요. 언어의 바다 도전! 1분스피치."><link rel="preload" href="assets/fonts/Jua-Regular.98f32645acec.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="assets/fonts/GowunDodum-Regular.3c5d8c1fbc00.woff2" as="font" type="font/woff2" crossorigin><style>:root{--ink:#142b54;--muted:#526c95;--blue:#3279eb;--line:#d8e3f2;--green:#17a86e;--yellow:#f2b728;--red:#e65760;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--ink);background:#fafbf9;font-synthesis:none}*{box-sizing:border-box}body{margin:0;-webkit-font-smoothing:antialiased;background:radial-gradient(ellipse at 80% 40%,#edf7ff40,transparent 55%)}button,select,input{font:inherit}button,a,select,summary{touch-action:manipulation}button,select,summary{cursor:pointer}button{transition:background .15s,transform .15s;border:0}button:active{transform:translateY(1px)}button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #3279eb;outline-offset:4px}button:disabled{cursor:default;opacity:.55}a{color:inherit;text-decoration:none}[hidden]{display:none!important}.site-header{border-bottom:1px solid var(--line);background:#ffffff80}.header-inner{max-width:1400px;margin:auto;padding:14px 36px;min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;white-space:nowrap}.brand strong{font-size:27px;letter-spacing:-1.2px;font-weight:850}.brand-sub{margin-left:10px;font-size:19px;color:var(--muted);font-weight:600}.brand-sub b{color:#f05f8c;font-weight:600}.brand-sub em{color:#2bbeb1;font-style:normal}.whale{display:block;position:relative;overflow:hidden;mix-blend-mode:multiply;flex-shrink:0;width:190px;height:145px}.whale img{position:absolute;max-width:none;width:760px;height:950px;left:-308px;top:-288px}.brand-whale{width:65px;height:48px}.brand-whale img{width:260px;height:325px;left:-105.4px;top:-98.5px}.guide-button{display:flex;align-items:center;gap:12px;border:1px solid #99b1d5;border-radius:30px;background:white;padding:10px 22px;color:#31558b;font-weight:600}.guide-button span{width:24px;height:24px;border:2px solid #57759f;border-radius:50%;display:grid;place-items:center}main{max-width:1040px;margin:auto;padding:38px 12px 24px}.intro{display:flex;align-items:center;justify-content:space-between;gap:20px}.intro h1{font-size:48px;letter-spacing:-2px;margin:0 0 6px;font-weight:850;line-height:1.25}.intro h1>span{display:inline-block;font-size:22px;color:#64cfc0;transform:rotate(-38deg);vertical-align:top;margin-left:7px}.intro p{font-size:20px;color:var(--muted);margin:0}.current-settings{display:flex;align-items:center;gap:24px;border-left:1px solid #bfcfe2;padding-left:28px;font-size:16px;font-weight:700}.text-button{background:none;color:#2674e8;padding:7px 0;font-weight:600;text-decoration:underline;text-underline-offset:3px}.text-button>span{font-size:23px;vertical-align:middle;margin-right:4px}.steps{display:flex;align-items:center;justify-content:center;list-style:none;padding:0;margin:24px auto 20px;gap:0;max-width:750px}.steps li{display:flex;align-items:center;gap:14px;color:var(--muted);font-size:18px;font-weight:700;white-space:nowrap}.steps li+li:before{content:'';display:block;width:72px;height:1px;background:#bdcfe3;margin:0 16px}.steps li>span{display:grid;place-items:center;border-radius:50%;width:44px;height:44px;background:#eaf0f6;font-size:21px}.steps .active,.steps .complete{color:#2878ee}.steps .active>span{background:linear-gradient(145deg,#4388f2,#2563dc);color:white}.steps .complete>span{font-size:26px}.topic-card{background:#fff;border:1px solid var(--line);border-radius:21px;padding:24px 34px 20px;box-shadow:0 2px 8px #233b5a02}.card-top{display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--muted);font-size:16px}.tag{display:inline-block;padding:8px 22px;border-radius:24px;background:#ddf6f0;font-size:15px;color:#244d63;font-weight:700}.topic-body{display:flex;align-items:center;justify-content:space-between;gap:25px;min-height:220px;padding:25px 10px 20px}.topic-copy{flex:1;min-width:0}.topic-copy h2{font-size:clamp(34px,4.1vw,55px);font-weight:850;line-height:1.25;letter-spacing:-2px;max-width:700px;margin:0;word-break:keep-all}.topic-copy p{color:var(--muted);font-size:18px;line-height:1.6;margin:14px 0 0;word-break:keep-all}.topic-whale{margin-right:0}.hint-panel{border-radius:14px;background:#f0f7ff;padding:18px 24px 20px}.hint-panel h3{color:#2173ef;font-size:18px;margin:0 0 15px}.hint-panel h3 span{font-size:25px;vertical-align:middle;margin-right:14px}.prompts{display:flex;justify-content:space-between;gap:0;color:#37578b;font-size:17px;text-align:center;line-height:1.5}.prompts p{flex:1;margin:0;padding:0 18px;word-break:keep-all}.prompts p+p{border-left:1px solid #c5dafa}.prep-timer{text-align:center;padding-top:14px}.prep-timer>p{margin:0 0 6px;color:var(--muted);font-size:16px}#prepTime{font-size:42px;line-height:1.2;font-weight:800;letter-spacing:-1px;font-variant-numeric:tabular-nums}.progress{max-width:450px;height:10px;border-radius:20px;background:#dce4ef;overflow:hidden;margin:9px auto 20px}.progress span{display:block;height:100%;background:var(--blue);border-radius:inherit;transition:width .2s linear}.actions{display:flex;gap:16px;justify-content:center}.primary,.outline{border-radius:14px;padding:13px 26px;min-height:51px;font-size:18px;font-weight:700;line-height:1.4}.primary{background:linear-gradient(115deg,#337cec,#3e78e7);color:#fff;border:1px solid #397ced}.primary:hover{background:#286bda}.primary>span{margin-left:12px}.outline{background:#fff;color:#3279eb;border:1px solid #4989f6}.outline:hover{background:#edf5ff}.prep-timer .timer-note{font-size:15px;margin:9px 0 0}.review{border-top:1px solid var(--line);margin-top:20px}.review summary{list-style:none;display:flex;align-items:center;justify-content:space-between;padding:18px 14px;font-size:17px;font-weight:700;gap:16px}.review summary::-webkit-details-marker{display:none}.review summary>span>span{font-size:23px;margin-right:12px;vertical-align:middle}.plus{font-size:22px;color:var(--muted)}details[open] .plus{transform:rotate(45deg)}.review-content{background:#f1f6fc;border-radius:12px;padding:12px 24px;color:var(--muted);font-size:15px}.checklist{display:flex;gap:24px;flex-wrap:wrap}.checklist label{display:flex;align-items:center;gap:8px;padding:8px 0}.checklist input{accent-color:var(--blue);width:18px;height:18px}.choices{display:flex;gap:12px;margin-top:18px}.choices:empty{display:none}.choices button{border:1px solid #bed4f1;color:#35547a;border-radius:12px;padding:11px 20px;background:#f6faff;font-weight:600}.choices button.selected{background:#e1f7ef;border-color:#35a987;color:#18795c}.speaking-topic{text-align:center;padding:0 12px 20px}.speaking-topic .tag{font-size:13px;padding:5px 16px}.speaking-topic h2{font-size:29px;letter-spacing:-.8px;line-height:1.4;margin:12px 0 0;word-break:keep-all;outline:none}.speaking-topic p{font-size:16px;color:var(--muted);margin:8px 0 0}.signal-panel{--signal:#179465;--tint:#f0faf5;border:1px solid #cce5d8;border-radius:28px;background:var(--tint);padding:24px 30px 20px;text-align:center;transition:background .3s,border-color .3s}.signal-panel[data-signal=yellow]{--signal:#946700;--tint:#fff9e9;border-color:#ead18e}.signal-panel[data-signal=red]{--signal:#c33e4c;--tint:#fff2f3;border-color:#f2c5c9}.traffic-lights{display:flex;justify-content:center;gap:30px;background:#fff;border:1px solid #dce4e8;border-radius:25px;width:max-content;max-width:100%;padding:16px 25px 12px;margin:0 auto;box-shadow:0 5px 16px #10233b05}.lamp-item{display:flex;flex-direction:column;gap:10px;align-items:center;min-width:90px;color:#6d7c90;font-size:15px;font-weight:700}.lamp{width:76px;height:76px;border-radius:50%;background:#e8edef;border:6px solid #f3f6f7}.signal-panel[data-signal=green] .green{background:#1fbd7d;border-color:#d5f6e6;box-shadow:0 0 0 4px #1fbd7d18}.signal-panel[data-signal=yellow] .yellow{background:#f3bc32;border-color:#fff0bb;box-shadow:0 0 0 4px #f3bc321c}.signal-panel[data-signal=red] .red{background:#e75b65;border-color:#ffdde0;box-shadow:0 0 0 4px #e75b6518}.signal-panel[data-signal=green] .lamp-item:first-child,.signal-panel[data-signal=yellow] .lamp-item:nth-child(2),.signal-panel[data-signal=red] .lamp-item:last-child{color:var(--signal)}.remaining-label{font-size:16px;color:var(--muted);margin:18px 0 0}.speak-time{font-size:clamp(90px,11vw,146px);line-height:1.12;font-weight:850;letter-spacing:-6px;font-variant-numeric:tabular-nums;color:var(--ink);margin:0}.speak-status{font-size:25px;color:var(--signal);font-weight:750;margin:0 0 17px;line-height:1.4}.speak-progress{height:9px;max-width:480px;background:#132e5310;border-radius:12px;margin:auto;overflow:hidden}.speak-progress span{display:block;height:100%;background:var(--signal);border-radius:inherit;transition:width .2s linear}.signal-explanation{font-size:13px;color:var(--muted);margin:15px 0 0}.signal-explanation span{margin:0 8px;color:#98a7b6}.speak-actions{margin-top:20px}.speak-links{display:flex;justify-content:center;gap:26px;margin-top:8px}.speak-links button{font-size:14px;color:var(--muted);text-decoration:none}body[data-phase=speak] main{padding-top:24px}body[data-phase=speak] .intro h1{font-size:34px}body[data-phase=speak] .intro p{font-size:16px}body[data-phase=speak] .steps{margin-top:20px}.wide{width:100%;margin-top:16px}dialog{border:1px solid var(--line);border-radius:24px;padding:32px;max-width:540px;width:calc(100% - 32px);max-height:90dvh;overflow:auto;color:var(--ink);box-shadow:0 20px 80px #12294c22}dialog::backdrop{background:#142b5460;backdrop-filter:blur(4px)}dialog h2{font-size:27px;margin:0 0 14px}dialog p{color:var(--muted);line-height:1.7;font-size:15px}dialog ol{padding-left:22px}dialog li{padding:7px 0}.close{position:absolute;right:15px;top:12px;background:none;font-size:28px;color:var(--muted);width:36px;height:36px}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}.settings-grid label{font-weight:600;font-size:14px;color:var(--muted)}select{display:block;width:100%;padding:12px 10px;border:1px solid #c9d8eb;background:#fff;color:var(--ink);border-radius:10px;margin-top:8px}
+@media(min-width:1400px){main{padding-top:40px}.topic-body{min-height:226px}.topic-copy h2{max-width:620px}.intro{margin-bottom:6px}}
+@media(max-width:900px){main{padding:28px 24px 20px}.intro h1{font-size:40px}.intro p{font-size:17px}.current-settings{gap:12px;padding-left:16px;font-size:13px}.topic-copy h2{font-size:40px}.topic-whale{transform:scale(.85);transform-origin:right center;width:165px}.steps li+li:before{width:40px;margin:0 12px}.topic-card{padding:22px}.topic-body{padding:22px 4px}.prompts p{padding:0 10px;font-size:15px}.brand strong{font-size:23px}.brand-sub{font-size:16px;margin-left:3px}}
+@media(max-width:640px){.header-inner{padding:10px 18px;min-height:66px}.brand{gap:7px}.brand strong{font-size:20px;letter-spacing:-1px}.brand-sub{display:none}.brand-whale{width:45px;height:34px}.brand-whale img{width:180px;height:225px;left:-73px;top:-68px}.guide-button{font-size:12px;padding:7px 11px;gap:6px}.guide-button span{width:19px;height:19px}main{padding:25px 18px 16px}.intro{display:block}.intro h1{font-size:35px}.intro p{font-size:16px}.current-settings{border:0;padding:0;margin-top:17px;justify-content:space-between;font-size:13px;gap:8px}.text-button>span{font-size:19px}.steps{margin:18px 0}.steps li{gap:7px;font-size:13px}.steps li>span{width:30px;height:30px;font-size:15px}.steps .complete>span{font-size:20px}.steps li+li:before{width:18px;margin:0 8px}.topic-card{padding:18px;border-radius:18px}.card-top{font-size:12px}.tag{font-size:12px;padding:6px 13px}.topic-body{min-height:0;padding:24px 2px}.topic-copy h2{font-size:33px;letter-spacing:-1.3px}.topic-copy p{font-size:15px;margin-top:12px}.topic-whale{display:none}.hint-panel{padding:15px 16px}.hint-panel h3{font-size:15px;margin-bottom:10px}.hint-panel h3 span{font-size:21px;margin-right:8px}.prompts{display:block;text-align:left}.prompts p{padding:4px 0;font-size:14px}.prompts p:before{content:'·';margin-right:8px;color:#6293d2}.prompts p+p{border:0}.prep-timer{padding-top:16px}#prepTime{font-size:38px}.progress{max-width:90%;margin-bottom:16px;height:8px}.actions{gap:9px}.primary,.outline{font-size:15px;padding:12px 14px;border-radius:12px;min-height:48px}.primary>span{margin-left:5px}.prep-timer .timer-note{font-size:12px}.review{margin-top:20px}.review summary{font-size:15px;padding:15px 3px}.checklist{display:block}.review-content{font-size:13px;padding:12px 16px}.choices{gap:8px;flex-wrap:wrap}.choices button{font-size:14px;padding:10px 12px}.speaking-topic{padding:3px 0 18px}.speaking-topic h2{font-size:24px}.signal-panel{padding:22px 15px 18px;border-radius:22px}.traffic-lights{gap:16px;padding:14px 16px 12px;border-radius:21px}.lamp-item{min-width:65px;font-size:12px;gap:9px}.lamp{width:59px;height:59px;border-width:5px}.remaining-label{font-size:14px;margin-top:20px}.speak-time{font-size:98px;letter-spacing:-4px;line-height:1.25}.speak-status{font-size:21px;margin-bottom:20px}.signal-explanation{font-size:11px;line-height:1.7}.signal-explanation span{margin:0 2px}.speak-links{gap:20px}.speak-links button{font-size:12px}body[data-phase=speak] .intro h1{font-size:28px}body[data-phase=speak] .intro p{display:none}.settings-grid{gap:15px 10px}select{font-size:14px;padding:10px 6px}dialog{padding:28px 22px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.hint-panel h3{display:flex;align-items:center;gap:15px}.bulb{width:25px;height:29px;flex-shrink:0;overflow:visible}.topic-copy h2{font-size:clamp(34px,4.7vw,56px)}@media(max-width:640px){.topic-copy h2{font-size:33px}.hint-panel h3{gap:10px}.bulb{width:19px;height:23px}}
+/* Two distinct, generous choices with a central versus marker. */
+body[data-mode=balance] .topic-body{min-height:0;padding-bottom:12px}
+body[data-mode=balance] .topic-whale{display:none}
+body[data-mode=balance] .topic-copy h2{font-size:clamp(30px,3.6vw,43px);max-width:none}
+.choices{display:grid;grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);align-items:stretch;gap:0;margin:14px 0 25px}
+.choices .choice-card{--choice:#245fbd;--choice-light:#eaf2ff;--choice-border:#83b0f5;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;min-width:0;min-height:186px;padding:21px 24px 18px;border:2px solid var(--choice-border);border-radius:22px;background:var(--choice-light);color:var(--choice);box-shadow:0 5px 0 #245fbd0b;transition:background .18s,border-color .18s,box-shadow .18s,transform .18s}
+.choices .choice-b{--choice:#b64429;--choice-light:#fff0e8;--choice-border:#efa28a;box-shadow:0 5px 0 #b644290b}
+.choice-letter{position:absolute;top:15px;left:17px;font-size:14px;font-weight:850;border-radius:50%;width:28px;height:28px;display:grid;place-items:center;background:#ffffffa8;color:var(--choice)}
+.choice-title{font-size:clamp(23px,2.8vw,31px);font-weight:800;line-height:1.4;letter-spacing:-.9px;word-break:keep-all;overflow-wrap:anywhere;padding-top:16px}
+.choice-state{font-size:13px;line-height:1.4;font-weight:700;padding:5px 12px;border-radius:30px;background:#ffffffa8;color:var(--choice)}
+.versus{align-self:center;justify-self:center;display:grid;place-items:center;width:50px;height:50px;border-radius:50%;background:#fff;color:#526582;font-size:21px;font-weight:900;font-style:italic;letter-spacing:-1px;box-shadow:0 3px 12px #274b7612;border:1px solid #e3e9f0;user-select:none}
+.choices .choice-card:hover{border-color:var(--choice);box-shadow:0 7px 16px #23426914;transform:translateY(-2px)}
+.choices .choice-card.selected{background:var(--choice);color:#fff;border-color:var(--choice);box-shadow:0 0 0 4px var(--choice-light),0 7px 18px #23426922}
+.choices .choice-card.selected .choice-state{background:#fff;color:var(--choice)}
+.choices .choice-card.selected .choice-letter{background:#ffffff24;color:white}
+.choices .choice-card:focus-visible{outline:3px solid var(--ink);outline-offset:5px}
+.choices .choice-card:active{transform:translateY(1px)}
+@media(max-width:640px){body[data-mode=balance] .topic-copy h2{font-size:29px}.choices{grid-template-columns:minmax(0,1fr);gap:0;margin:8px 0 22px}.choices .choice-card{min-height:132px;border-radius:18px;padding:18px 22px;gap:10px}.choice-title{font-size:24px;line-height:1.35;padding:12px 14px 0}.choice-letter{width:24px;height:24px;font-size:12px;left:12px;top:12px}.choice-state{font-size:12px;padding:4px 11px}.versus{width:40px;height:40px;margin:-7px 0;font-size:17px;z-index:1;border:3px solid #fff;box-shadow:0 2px 10px #274b761a}}
+@media(prefers-reduced-motion:reduce){.choices .choice-card{transition:none}.choices .choice-card:hover{transform:none}}
+/* Brand pink / emerald choices and softer Korean typography. */
+@font-face{font-family:'Jua';src:url('assets/fonts/Jua-Regular.98f32645acec.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Gowun Dodum';src:url('assets/fonts/GowunDodum-Regular.3c5d8c1fbc00.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+:root{font-family:'Gowun Dodum','Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+body{line-height:1.6}
+h1,h2,h3,button,summary,.steps,.tag,.choice-title,.choice-letter,.choice-state,.versus,.lamp-item,.speak-status{font-family:'Jua','Gowun Dodum',sans-serif;font-weight:400}
+.brand{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+.intro h1,.topic-copy h2,.speaking-topic h2,body[data-mode=balance] .topic-copy h2{font-weight:400;letter-spacing:-.6px;line-height:1.4}
+.intro h1{font-size:46px}.topic-copy h2{font-size:clamp(34px,4.5vw,52px)}
+body[data-mode=balance] .topic-copy h2{font-size:clamp(30px,3.6vw,43px)}
+.intro p{font-size:20px;line-height:1.7}.topic-copy p{font-size:19px;line-height:1.75}.current-settings{font-weight:400}.steps li,.guide-button,.text-button,.primary,.outline,.tag,.review summary,.speak-status,.lamp-item{font-weight:400}
+.steps li{font-size:19px}.hint-panel h3{font-weight:400;font-size:20px}.prompts{font-size:18px;line-height:1.7}.settings-grid label{font-weight:400;font-size:16px}.signal-explanation{font-size:14px}.review-content{font-size:16px}
+#prepTime,.speak-time{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;font-weight:650;font-variant-numeric:tabular-nums}
+.choices .choice-card{--choice:#a62d59;--choice-accent:#ff6496;--choice-light:#fff1f6;--choice-border:#ff96b9;--choice-selected:#ffdae8;border:2px solid var(--choice-border);border-radius:26px;background:var(--choice-light);color:var(--choice);box-shadow:0 6px 0 #f8dbe5;gap:16px;padding:25px 24px 22px}
+.choices .choice-b{--choice:#176b60;--choice-accent:#49cbbb;--choice-light:#ecfbf7;--choice-border:#70d5c7;--choice-selected:#cbf2e9;box-shadow:0 6px 0 #d9f0e9}
+.choice-title{font-size:clamp(25px,2.8vw,33px);font-weight:400;letter-spacing:0;line-height:1.45}.choice-letter{font-size:16px;font-weight:400;background:#fff;width:30px;height:30px;color:var(--choice)}
+.choice-state{font-size:15px;font-weight:400;padding:7px 16px;background:#fff;color:var(--choice)}
+.versus{font-size:22px;font-style:normal;font-weight:400;letter-spacing:0;background:#fff;color:#7181a0}
+.choices .choice-card:hover{background:var(--choice-selected);border-color:var(--choice-accent);box-shadow:0 6px 18px #22395a12}
+.choices .choice-card.selected{background:var(--choice-selected);color:var(--choice);border-color:var(--choice-accent);box-shadow:0 0 0 4px var(--choice-light),0 6px 0 var(--choice-border)}
+.choices .choice-card.selected .choice-state{background:var(--choice);color:#fff}
+.choices .choice-card.selected .choice-letter{background:var(--choice);color:#fff}
+@media(max-width:640px){.intro h1{font-size:35px}.intro p{font-size:17px}.topic-copy h2{font-size:32px}.topic-copy p{font-size:16px}.steps li{font-size:14px;gap:6px}.steps li+li:before{margin:0 7px;width:16px}.hint-panel h3{font-size:17px}.prompts p{font-size:15px;line-height:1.75}.choices .choice-card{min-height:142px;border-radius:22px;padding:19px 22px;gap:12px}.choice-title{font-size:26px;padding-top:12px;line-height:1.4}.choice-letter{width:25px;height:25px;font-size:14px}.choice-state{font-size:14px;padding:5px 14px}.versus{font-size:18px}.signal-explanation{font-size:12px}.primary,.outline{font-size:16px}.settings-grid label{font-size:15px}}
+
+/* Show the complete original logo, including its lettering; crop only blank margins in CSS. */
+.brand-logo{position:relative;display:block;overflow:hidden;width:180px;aspect-ratio:3/2;flex-shrink:0}
+.brand-logo img{position:absolute;display:block;width:180%;max-width:none;height:auto;left:-40.833333%;top:-102%;}
+@media(max-width:640px){.brand-logo{width:150px}}
+
+/* Equal side columns keep the original logo centered independently of the help button. */
+.header-inner{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:0}
+.header-inner .brand{grid-column:2;justify-self:center}
+.header-inner .guide-button{grid-column:3;justify-self:end}
+@media(max-width:380px){.brand-logo{width:120px}.guide-button{font-size:11px;padding:7px 9px}.guide-button span{display:none}}
+@media(max-width:380px){.steps li{font-size:12px;gap:4px}.steps li>span{width:26px;height:26px}.steps li+li:before{width:8px;margin:0 4px}}
+</style></head>
+<body data-phase="prep">
+<header class="site-header"><div class="header-inner"><a class="brand" href="./" aria-label="언어의 바다 처음으로"><span class="brand-logo"><img src="assets/ocean-logo.18318eb34f78.png" alt="언어의 바다 스피치 &amp; 논술" width="1080" height="1350"></span></a><button id="guideButton" class="guide-button">사용 방법 <span aria-hidden="true">?</span></button></div></header>
+<main>
+<section class="intro"><div><h1>도전! 1분스피치<span aria-hidden="true">▰</span></h1><p>떠오르는 생각을 나만의 이야기로.</p></div><div class="current-settings"><span id="settingsSummary"></span><button id="settingsButton" class="text-button"><span aria-hidden="true">⚙</span> 설정 변경</button></div></section>
+<ol class="steps" aria-label="연습 순서"><li class="complete"><span>✓</span>주제 살펴보기</li><li id="prepStep" class="active" aria-current="step"><span>2</span>생각하기</li><li id="speakStep"><span>3</span>말하기</li></ol>
+<section id="prepScreen" aria-label="생각하기">
+<article class="topic-card"><div class="card-top"><span id="topicTag" class="tag"></span><span id="counter"></span></div><div class="topic-body"><div class="topic-copy"><h2 id="question"></h2><p id="hint"></p></div><span class="whale topic-whale" aria-hidden="true"><img src="assets/ocean-logo.18318eb34f78.png" alt=""></span></div><div id="choices" class="choices" role="group" aria-label="둘 중 하나를 선택하세요"></div><div class="hint-panel"><h3><svg class="bulb" aria-hidden="true" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 19c0-4-4-5-4-9a8 8 0 0 1 16 0c0 4-4 5-4 9M8 20h8M9 24h6M12 0v-2M1 2l-2-2M23 2l2-2"/></svg> 말하기 힌트</h3><div id="prompts" class="prompts"></div></div></article>
+<div class="prep-timer"><p id="prepStatus" role="status">◷ 생각하는 중</p><div id="prepTime" role="timer" aria-label="생각할 시간">00:30</div><div id="prepProgress" class="progress" role="progressbar" aria-label="남은 생각 시간" aria-valuemin="0" aria-valuemax="30" aria-valuenow="30"><span></span></div><div class="actions"><button id="prepPause" class="outline">Ⅱ 잠깐 멈추기</button><button id="ready" class="primary">준비됐어요 · 말하기로 <span aria-hidden="true">→</span></button></div><p class="timer-note">시간이 남아도 준비되면 시작할 수 있어요.</p></div>
+</section>
+<section id="speakScreen" aria-label="말하기" hidden>
+<div class="speaking-topic"><span class="tag">지금 말할 주제</span><h2 id="speakingQuestion" tabindex="-1"></h2><p id="chosenAnswer" hidden></p></div>
+<div id="signalPanel" class="signal-panel" data-signal="green"><div class="traffic-lights" aria-label="말하기 신호등"><div class="lamp-item"><span class="lamp green"></span><span>말해요</span></div><div class="lamp-item"><span class="lamp yellow"></span><span>마무리해요</span></div><div class="lamp-item"><span class="lamp red"></span><span>다 했어요</span></div></div><p class="remaining-label">남은 말하기 시간</p><div id="speakTime" class="speak-time" role="timer" aria-label="남은 말하기 시간">01:00</div><p id="speakStatus" class="speak-status" role="status">나의 이야기를 들려주세요!</p><div class="speak-progress"><span id="speakProgress"></span></div><p class="signal-explanation">초록 · 편하게 말해요 <span>→</span> 노랑 · 10초 남음 <span>→</span> 빨강 · 시간 종료</p></div>
+<div class="actions speak-actions"><button id="speakPause" class="outline">Ⅱ 잠깐 멈추기</button><button id="finish" class="primary">말하기 마쳤어요 <span aria-hidden="true">✓</span></button></div><div class="speak-links"><button id="back" class="text-button">← 생각하기로</button><button id="restart" class="text-button">말하기 다시 시작</button><button id="next" class="text-button" hidden>다음 주제 →</button></div>
+</section>
+<details id="review" class="review"><summary><span><span aria-hidden="true">▤</span> 오늘의 말하기 돌아보기</span><span class="plus" aria-hidden="true">＋</span></summary><div class="review-content"><div class="checklist"><label><input type="checkbox"> 내 생각을 먼저 말했어요.</label><label><input type="checkbox"> 이유를 붙여 설명했어요.</label><label><input type="checkbox"> 끝까지 또박또박 말했어요.</label></div><p id="follow"></p></div></details>
+</main>
+<dialog id="settings"><button id="closeSettings" class="close" aria-label="설정 닫기">×</button><h2>연습 설정</h2><p>나에게 맞는 주제와 시간을 골라요.</p><div class="settings-grid"><label>대상<select id="level"><option value="young">초등 1–3학년</option><option value="older">초등 4–6학년</option><option value="teen">중·고등학생</option></select></label><label>말하기 방식<select id="mode"><option value="topic">주제 말하기</option><option value="balance">둘 중 하나</option><option value="imagine">상상 말하기</option></select></label><label>생각할 시간<select id="prepDuration"><option value="15">15초</option><option value="30" selected>30초</option><option value="60">1분</option></select></label><label>말하기 시간<select id="speakDuration"><option value="30">30초</option><option value="60" selected>1분</option><option value="90">1분 30초</option><option value="120">2분</option><option value="180">3분</option></select></label></div><button id="applySettings" class="primary wide">설정 적용</button><button id="draw" class="outline wide">다른 주제 뽑기 ↻</button></dialog>
+<dialog id="guide"><button id="closeGuide" class="close" aria-label="사용 방법 닫기">×</button><h2>이렇게 연습해요</h2><ol><li><b>주제를 살펴봐요</b><p>설정 변경에서 대상과 말하기 방식, 시간을 고를 수 있어요.</p></li><li><b>생각을 준비해요</b><p>힌트를 보며 이야기를 떠올려요. 준비되면 ‘말하기로’를 눌러요.</p></li><li><b>나의 이야기를 말해요</b><p>다음 화면에서 말하기 시간이 바로 시작돼요. 초록불에는 편하게, 노란불에는 마지막 문장을 마무리해요. 빨간불은 시간 종료예요.</p></li><li><b>말하기를 돌아봐요</b><p>오늘 잘한 점을 체크하고, 다음 주제에 도전해요.</p></li></ol><p>녹음하거나 학생 정보를 수집하지 않습니다. 새로고침하면 연습 상태가 초기화됩니다.</p></dialog>
+<script>const bank={
+  "young": {
+    "topic": [
+      "학교가 끝나고 가장 하고 싶은 일은?",
+      "친구에게 알려 주고 싶은 놀이는?",
+      "내가 가장 좋아하는 음식은?",
+      "최근에 크게 웃었던 일은?",
+      "다시 가고 싶은 곳은?",
+      "처음에는 어려웠는데 이제 잘하는 것은?",
+      "친구에게 고마웠던 일은?",
+      "내가 직접 만들고 싶은 간식은?",
+      "내가 아끼는 물건 하나를 소개한다면?",
+      "비 오는 날 집에서 재미있게 노는 방법은?",
+      "내가 가장 좋아하는 동물은?",
+      "이번 주말에 함께 하고 싶은 일은?"
+    ],
+    "balance": [
+      [
+        "쉬는 날 놀러 간다면?",
+        "바다",
+        "숲"
+      ],
+      [
+        "선물을 받는다면?",
+        "갖고 싶은 물건",
+        "가고 싶은 곳 여행"
+      ],
+      [
+        "동물 친구와 이야기한다면?",
+        "강아지",
+        "고양이"
+      ],
+      [
+        "새로운 것을 배운다면?",
+        "요리",
+        "악기"
+      ],
+      [
+        "이야기 속 주인공이 된다면?",
+        "하늘을 나는 사람",
+        "바닷속을 탐험하는 사람"
+      ],
+      [
+        "친구와 함께한다면?",
+        "그림 그리기",
+        "운동하기"
+      ]
+    ],
+    "imagine": [
+      "내 연필이 말을 한다면?",
+      "내 몸이 손가락만큼 작아진다면 어디에서 놀까요?",
+      "내가 초능력을 가질 수 있다면?",
+      "하루 동안 동물이 될 수 있다면?",
+      "강아지가 우리 반에 입학한다면?",
+      "내 방에 어디로든 가는 문이 생긴다면?"
+    ]
+  },
+  "older": {
+    "topic": [
+      "친구와 함께해서 더 재미있었던 일은?",
+      "우리 학교에 꼭 생겼으면 하는 공간은?",
+      "연습해서 전보다 잘하게 된 것은?",
+      "친구에게 추천하고 싶은 놀이 또는 게임은?",
+      "하루 동안 휴대전화 없이 논다면 무엇을 할까요?",
+      "급식 메뉴를 하루 동안 내가 정한다면?",
+      "친구에게 소개하고 싶은 동네 장소는?",
+      "내가 친구에게 가르쳐 줄 수 있는 것은?",
+      "친구들과 하루 나들이를 간다면?",
+      "친구에게 추천하고 싶은 책이나 만화는?",
+      "내가 푹 빠져 있는 취미는?",
+      "방학에 꼭 해 보고 싶은 일은?"
+    ],
+    "balance": [
+      [
+        "친구들과 함께 놀러 간다면?",
+        "놀이공원",
+        "물놀이장"
+      ],
+      [
+        "용돈이 생긴다면?",
+        "지금 갖고 싶은 것 사기",
+        "더 큰 선물을 위해 모으기"
+      ],
+      [
+        "우리 반 특별 활동을 고른다면?",
+        "함께 요리하기",
+        "함께 운동하기"
+      ],
+      [
+        "반 친구들과 추억을 만든다면?",
+        "하루 캠핑",
+        "하루 놀이 대회"
+      ],
+      [
+        "하루 동안 특별한 능력을 쓴다면?",
+        "하늘 날기",
+        "순간 이동하기"
+      ],
+      [
+        "한 가지 능력을 얻는다면?",
+        "동물의 말 이해하기",
+        "모든 나라의 말 이해하기"
+      ]
+    ],
+    "imagine": [
+      "쉬는 시간이 30분으로 늘어난다면?",
+      "하루 동안 우리 반 선생님이 된다면?",
+      "내가 좋아하는 이야기 속으로 들어간다면?",
+      "내가 원하는 대로 놀이터를 만든다면?",
+      "우리 반에서 작은 축제를 연다면?",
+      "나를 도와주는 로봇이 생긴다면?"
+    ]
+  },
+  "teen": {
+    "topic": [
+      "나를 한 단어로 소개한다면?",
+      "최근에 내 생각이 달라진 일은?",
+      "요즘 내가 가장 푹 빠져 있는 것은?",
+      "좋은 리더란?",
+      "내가 바꾸고 싶은 생활 습관은?",
+      "친구에게 들었던 말 중 가장 기억에 남는 말은?",
+      "실수한 뒤 다시 도전했던 경험은?",
+      "친구에게 추천하고 싶은 책, 영화 또는 음악은?",
+      "요즘 날씨로 스피치하기",
+      "말을 잘하는 방법",
+      "나의 버킷리스트",
+      "관심 있는 직업을 직접 체험한다면?"
+    ],
+    "balance": [
+      [
+        "모둠 활동을 한다면?",
+        "친한 친구들과 하기",
+        "새로운 친구들과 하기"
+      ],
+      [
+        "학교 축제에 참여한다면?",
+        "무대에서 공연하기",
+        "체험 부스 운영하기"
+      ],
+      [
+        "시험공부를 한다면?",
+        "혼자 집중해서 공부하기",
+        "친구와 서로 알려 주며 공부하기"
+      ],
+      [
+        "발표 순서를 고른다면?",
+        "첫 번째로 발표하기",
+        "마지막에 발표하기"
+      ],
+      [
+        "친구들과 여행을 간다면?",
+        "자연 속에서 캠핑하기",
+        "도시에서 맛집과 전시 둘러보기"
+      ],
+      [
+        "한 달 동안 새로운 도전을 한다면?",
+        "매일 짧은 영상 만들기",
+        "매일 운동 기록 남기기"
+      ]
+    ],
+    "imagine": [
+      "내가 새 동아리를 만든다면?",
+      "다른 나라 학교에서 일주일을 보낸다면?",
+      "10년 뒤의 나와 한 시간 동안 만난다면?",
+      "하루 동안 학교 시간표를 마음대로 정한다면?",
+      "나만의 영상 채널을 만든다면?",
+      "학교생활을 편하게 해 주는 앱을 만든다면?"
+    ]
+  }
+};
+const topicPrompts={
+  "young": {
+    "topic": [
+      [
+        "무엇을 하고 싶나요?",
+        "어디에서 누구와 할까요?",
+        "어떤 점이 가장 신나나요?"
+      ],
+      [
+        "어떤 놀이인가요?",
+        "어떻게 하는 놀이인가요?",
+        "가장 재미있는 순간은 언제인가요?"
+      ],
+      [
+        "어떤 맛과 냄새가 나나요?",
+        "언제 먹으면 가장 맛있나요?",
+        "누구와 함께 먹고 싶나요?"
+      ],
+      [
+        "어디에서 무슨 일이 있었나요?",
+        "어떤 말이나 행동이 웃겼나요?",
+        "함께 있던 사람은 어떻게 했나요?"
+      ],
+      [
+        "어디에 갔었나요?",
+        "그곳에서 무엇을 했나요?",
+        "다시 가면 무엇을 하고 싶나요?"
+      ],
+      [
+        "무엇이 어려웠나요?",
+        "어떻게 연습했나요?",
+        "잘하게 됐을 때 기분이 어땠나요?"
+      ],
+      [
+        "무슨 일이 있었나요?",
+        "친구가 어떻게 도와줬나요?",
+        "어떤 마음이 들었나요?"
+      ],
+      [
+        "어떤 간식을 만들까요?",
+        "어떤 재료를 넣고 싶나요?",
+        "누구에게 맛보여 주고 싶나요?"
+      ],
+      [
+        "어떻게 생긴 물건인가요?",
+        "어떻게 갖게 되었나요?",
+        "왜 아끼는 물건인가요?"
+      ],
+      [
+        "어떤 놀이를 할까요?",
+        "무엇을 준비해야 하나요?",
+        "혼자 또는 함께 어떻게 놀까요?"
+      ],
+      [
+        "어떤 모습이 귀여우거나 멋진가요?",
+        "어디에서 보았나요?",
+        "만나면 무엇을 해 보고 싶나요?"
+      ],
+      [
+        "무엇을 하고 싶나요?",
+        "누구와 함께하고 싶나요?",
+        "어떤 준비를 하면 좋을까요?"
+      ]
+    ],
+    "imagine": [
+      [
+        "연필이 나에게 가장 하고 싶은 말은요?",
+        "수업 시간에 연필과 어떤 이야기를 나눌까요?",
+        "연필과 나만의 비밀이 생긴다면요?"
+      ],
+      [
+        "어디를 탐험하고 싶나요?",
+        "어떤 물건을 놀이기구로 쓸까요?",
+        "집으로 돌아올 때 누구의 도움을 받을까요?"
+      ],
+      [
+        "어떤 초능력을 갖고 싶나요?",
+        "그 능력으로 가장 먼저 무엇을 할까요?",
+        "초능력을 쓰다가 재미있는 일이 생긴다면요?"
+      ],
+      [
+        "어떤 동물이 되고 싶나요?",
+        "어디에서 무엇을 하며 지낼까요?",
+        "친구들이 나를 알아보면 어떻게 할까요?"
+      ],
+      [
+        "강아지의 자리는 어디가 좋을까요?",
+        "어떤 수업을 좋아할까요?",
+        "쉬는 시간에 함께 무엇을 할까요?"
+      ],
+      [
+        "문을 열면 어디로 가고 싶나요?",
+        "누구와 함께 갈까요?",
+        "그곳에서 꼭 하고 싶은 일은요?"
+      ]
+    ]
+  },
+  "older": {
+    "topic": [
+      [
+        "어디에서 무엇을 했나요?",
+        "가장 기억나는 장면은요?",
+        "다시 한다면 무엇을 바꾸고 싶나요?"
+      ],
+      [
+        "어떤 공간을 만들고 싶나요?",
+        "그곳에서 무엇을 할 수 있나요?",
+        "함께 쓰려면 어떤 약속이 필요할까요?"
+      ],
+      [
+        "처음에는 무엇이 어려웠나요?",
+        "도움이 된 연습 방법은요?",
+        "처음 배우는 친구에게 어떤 팁을 줄까요?"
+      ],
+      [
+        "어떻게 하는 놀이인가요?",
+        "가장 재미있는 점은요?",
+        "처음 하는 친구에게 어떤 요령을 알려 줄까요?"
+      ],
+      [
+        "가장 먼저 무엇을 할까요?",
+        "누구와 어디에서 놀까요?",
+        "심심해지면 어떤 놀이를 더 할까요?"
+      ],
+      [
+        "어떤 음식 세 가지를 고를까요?",
+        "그 조합을 고른 이유는요?",
+        "친구들에게 메뉴를 어떻게 소개할까요?"
+      ],
+      [
+        "어디에 있는 곳인가요?",
+        "그곳에서 무엇을 할 수 있나요?",
+        "함께 가면 무엇부터 할까요?"
+      ],
+      [
+        "무엇을 알려 주고 싶나요?",
+        "어떤 순서로 알려 줄까요?",
+        "잘하는 나만의 비법은요?"
+      ],
+      [
+        "어디에 가고 싶나요?",
+        "어떤 순서로 무엇을 할까요?",
+        "가장 기대되는 순간은요?"
+      ],
+      [
+        "어떤 이야기인가요?",
+        "가장 기억에 남는 장면은요?",
+        "친구도 좋아할 것 같은 이유는요?"
+      ],
+      [
+        "무엇을 하는 취미인가요?",
+        "어떻게 좋아하게 되었나요?",
+        "다음에는 무엇에 도전하고 싶나요?"
+      ],
+      [
+        "무엇을 해 보고 싶나요?",
+        "어떤 준비가 필요한가요?",
+        "해낸 뒤 기분이 어떨 것 같나요?"
+      ]
+    ],
+    "imagine": [
+      [
+        "무엇을 하며 보내고 싶나요?",
+        "누구와 어디에서 할까요?",
+        "다음 수업도 잘 시작하려면 어떤 약속을 할까요?"
+      ],
+      [
+        "첫 수업에서 무엇을 가르칠까요?",
+        "어떤 재미있는 활동을 할까요?",
+        "친구들이 떠들면 어떻게 할까요?"
+      ],
+      [
+        "어떤 이야기 속으로 가고 싶나요?",
+        "어떤 인물을 만나고 싶나요?",
+        "함께 어떤 사건을 겪을까요?"
+      ],
+      [
+        "꼭 넣고 싶은 놀이기구는요?",
+        "그 놀이기구에서 어떻게 놀까요?",
+        "친구들과 어떤 새로운 놀이를 할까요?"
+      ],
+      [
+        "어떤 체험이나 게임을 준비할까요?",
+        "나는 어떤 역할을 맡고 싶나요?",
+        "찾아온 친구들에게 어떻게 소개할까요?"
+      ],
+      [
+        "어떤 일을 도와주면 좋을까요?",
+        "로봇에게 하루를 어떻게 설명할까요?",
+        "일을 마친 로봇과 무엇을 하며 놀까요?"
+      ]
+    ]
+  },
+  "teen": {
+    "topic": [
+      [
+        "어떤 단어를 고르고 싶나요?",
+        "그 단어와 닮은 내 모습은요?",
+        "그 모습을 보여 주는 경험이 있나요?"
+      ],
+      [
+        "처음에는 어떻게 생각했나요?",
+        "어떤 경험이나 이야기를 접했나요?",
+        "지금은 어떻게 생각하나요?"
+      ],
+      [
+        "무엇에 관심이 많나요?",
+        "어떻게 좋아하게 되었나요?",
+        "친구에게 추천하고 싶은 매력은요?"
+      ],
+      [
+        "함께하고 싶은 리더는 어떤 사람인가요?",
+        "학교나 동아리에서 본 예가 있나요?",
+        "내가 리더라면 어떤 행동을 할까요?"
+      ],
+      [
+        "어떤 습관을 바꾸고 싶나요?",
+        "그 습관 때문에 불편했던 일은요?",
+        "오늘부터 할 수 있는 작은 실천은요?"
+      ],
+      [
+        "어떤 상황에서 들은 말인가요?",
+        "왜 그 말이 기억에 남나요?",
+        "나는 친구에게 어떤 말을 해 주고 싶나요?"
+      ],
+      [
+        "어떤 실수를 했나요?",
+        "다시 할 때 무엇을 바꿨나요?",
+        "그 경험으로 알게 된 점은요?"
+      ],
+      [
+        "어떤 작품을 소개하고 싶나요?",
+        "특히 기억에 남는 부분은요?",
+        "어떤 친구에게 추천하고 싶나요?"
+      ],
+      [
+        "요즘 날씨를 한마디로 표현하면요?",
+        "날씨 때문에 달라진 일상이나 기분은요?",
+        "이 날씨에 하고 싶은 일은요?"
+      ],
+      [
+        "어떤 사람의 말이 귀에 잘 들어오나요?",
+        "내가 말할 때 어려운 점은요?",
+        "직접 해 보고 싶은 연습 방법은요?"
+      ],
+      [
+        "꼭 해 보고 싶은 일 세 가지는요?",
+        "그중 가장 먼저 하고 싶은 일과 이유는요?",
+        "지금부터 무엇을 준비할 수 있나요?"
+      ],
+      [
+        "어떤 직업을 체험하고 싶나요?",
+        "그 일의 어떤 점이 궁금한가요?",
+        "직접 해 보면 무엇을 알 수 있을까요?"
+      ]
+    ],
+    "balance": [
+      [
+        "어느 쪽을 선택하고 싶나요?",
+        "선택한 쪽에서 기대되는 점은요?",
+        "걱정되는 점은 어떻게 해결할까요?"
+      ],
+      [
+        "어떤 활동을 선택할까요?",
+        "구체적으로 무엇을 준비하고 싶나요?",
+        "내가 잘할 수 있는 역할은요?"
+      ],
+      [
+        "어느 방식이 나에게 맞나요?",
+        "그렇게 공부해 본 경험은요?",
+        "더 효과적으로 하려면 어떤 약속이 필요할까요?"
+      ],
+      [
+        "어느 순서를 고르고 싶나요?",
+        "그 순서의 좋은 점은요?",
+        "기다리는 동안 어떻게 준비할까요?"
+      ],
+      [
+        "어느 여행이 더 끌리나요?",
+        "가서 꼭 하고 싶은 일은요?",
+        "친구들을 어떻게 설득할까요?"
+      ],
+      [
+        "어떤 도전을 고르고 싶나요?",
+        "처음 일주일은 어떻게 시작할까요?",
+        "한 달 뒤 어떤 모습이 기대되나요?"
+      ]
+    ],
+    "imagine": [
+      [
+        "어떤 관심사를 나누는 동아리인가요?",
+        "첫 모임에서 무엇을 할까요?",
+        "친구들을 어떻게 모집할까요?"
+      ],
+      [
+        "어느 나라 학교에 가고 싶나요?",
+        "그 학교에서 가장 궁금한 것은요?",
+        "새 친구들에게 나를 어떻게 소개할까요?"
+      ],
+      [
+        "가장 먼저 무엇을 물어볼까요?",
+        "지금의 나를 어떻게 소개할까요?",
+        "미래의 나에게 어떤 부탁을 할까요?"
+      ],
+      [
+        "어떤 수업과 활동을 넣을까요?",
+        "친구들과 함께 해 보고 싶은 활동은요?",
+        "그 하루에서 무엇을 얻고 싶나요?"
+      ],
+      [
+        "무슨 주제를 다루는 채널인가요?",
+        "첫 영상에서 무엇을 보여 줄까요?",
+        "보는 사람에게 어떤 재미나 도움을 줄까요?"
+      ],
+      [
+        "어떤 불편함을 해결하고 싶나요?",
+        "가장 중요한 기능은 무엇인가요?",
+        "친구가 앱을 쓰는 장면을 설명해 볼까요?"
+      ]
+    ]
+  }
+};
+const $=id=>document.getElementById(id);
+let bags={},current=-1,phase='prep',timer=null,remaining=30,total=30,endAt=0,selectedAnswer='',completed=false,modalWasRunning=false;
+let config={level:'young',mode:'topic',prep:30,speak:60};
+function stop(){clearInterval(timer);timer=null}
+function format(n){return String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0')}
+function display(){
+ const isPrep=phase==='prep', time=isPrep?'prepTime':'speakTime';$(time).textContent=format(remaining);
+ if(isPrep){$('prepStatus').textContent=remaining===0?'✓ 생각할 시간이 끝났어요':timer?'◷ 생각하는 중':'Ⅱ 잠깐 쉬는 중';$('prepProgress').firstElementChild.style.width=remaining/total*100+'%';$('prepProgress').setAttribute('aria-valuemax',total);$('prepProgress').setAttribute('aria-valuenow',remaining);$('prepPause').textContent=timer?'Ⅱ 잠깐 멈추기':remaining===0?'↻ 다시 생각하기':'▶ 이어서 생각하기'}
+ else{const signal=completed||remaining===0?'red':remaining<=10?'yellow':'green';$('signalPanel').dataset.signal=signal;$('speakProgress').style.width=remaining/total*100+'%';$('speakStatus').textContent=completed?'멋지게 말했어요!':remaining===0?'시간이 끝났어요. 잘했어요!':!timer?'잠깐 쉬어요. 준비되면 이어서!':signal==='yellow'?'마지막 문장을 마무리해요!':'나의 이야기를 들려주세요!';$('speakPause').textContent=timer?'Ⅱ 잠깐 멈추기':'▶ 이어서 말하기';$('speakPause').disabled=completed||remaining===0;$('finish').hidden=completed||remaining===0;$('next').hidden=!(completed||remaining===0)}
+}
+function tick(){remaining=Math.max(0,Math.ceil((endAt-Date.now())/1000));if(remaining===0){stop();if(phase==='speak')$('review').open=true}display()}
+function run(){if(remaining===0)return;endAt=Date.now()+remaining*1000;timer=setInterval(tick,200);display()}
+function pause(){if(timer){remaining=Math.max(0,Math.ceil((endAt-Date.now())/1000));stop();display()}}
+function toggle(){if(timer)pause();else{if(remaining===0)remaining=total;run()}}
+function setPhase(p,focus=false){stop();phase=p;completed=false;document.body.dataset.phase=p;$('prepScreen').hidden=p!=='prep';$('speakScreen').hidden=p!=='speak';$('prepStep').className=p==='prep'?'active':'complete';$('prepStep').firstElementChild.textContent=p==='prep'?'2':'✓';$('speakStep').className=p==='speak'?'active':'';for(const [id,value]of[['prepStep','prep'],['speakStep','speak']]){if(p===value)$(id).setAttribute('aria-current','step');else $(id).removeAttribute('aria-current')};remaining=total=config[p];$('review').open=false;display();run();if(focus){window.scrollTo({top:0,behavior:'instant'});if(p==='speak')$('speakingQuestion').focus({preventScroll:true});else $('ready').focus({preventScroll:true})}}
+function draw(initial=false){let l=config.level,m=config.mode,key=l+m,list=bank[l][m];if(!bags[key]||!bags[key].length){bags[key]=list.map((_,i)=>i);for(let i=bags[key].length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[bags[key][i],bags[key][j]]=[bags[key][j],bags[key][i]]}if(bags[key].length>1&&bags[key].at(-1)===current)[bags[key][0],bags[key][bags[key].length-1]]=[bags[key].at(-1),bags[key][0]];if(initial&&l==='young'&&m==='topic'){bags[key]=bags[key].filter(i=>i!==6);bags[key].push(6)}}current=bags[key].pop();let q=list[current],question=Array.isArray(q)?q[0]:q;selectedAnswer='';$('question').textContent=question;if(question==='친구에게 고마웠던 일은?'){$('question').replaceChildren(document.createTextNode('친구에게'),document.createElement('br'),document.createTextNode('고마웠던 일은?'))};$('speakingQuestion').textContent=question;$('chosenAnswer').hidden=true;$('counter').textContent='질문 '+(list.length-bags[key].length)+' / '+list.length;$('topicTag').textContent={topic:'나를 발견하기',balance:'다른 선택, 다른 생각',imagine:'상상의 바다로'}[m];const thanks=question==='친구에게 고마웠던 일은?';$('hint').textContent=thanks?'누구와 있었던 일인지, 어떤 마음이었는지 떠올려 보세요.':m==='balance'?'마음이 가는 쪽을 고르고, 이유를 떠올려 보세요.':m==='imagine'?'자유롭게 상상해요. 어떤 일이 벌어질까요?':'나의 경험과 생각을 천천히 떠올려 보세요.';const prompts=topicPrompts[l]?.[m]?.[current] ?? (thanks?['무슨 일이 있었나요?','친구가 어떻게 도와줬나요?','어떤 마음이 들었나요?']:m==='balance'?['어느 쪽을 고르고 싶나요?','그렇게 고른 이유는요?','예를 들어 말해 볼까요?']:m==='imagine'?['어떤 일이 벌어질까요?','나는 무엇을 할까요?','무엇이 달라질까요?']:['어떤 생각이 떠오르나요?','그렇게 생각한 이유는요?','어떤 경험이 있었나요?']);$('prompts').replaceChildren(...prompts.map(t=>{let p=document.createElement('p');p.textContent=t;return p}));document.body.dataset.mode=m;
+$('choices').replaceChildren();
+if(Array.isArray(q))q.slice(1).forEach((t,i)=>{
+  if(i===1){const vs=document.createElement('span');vs.className='versus';vs.textContent='VS';vs.setAttribute('aria-hidden','true');$('choices').append(vs)}
+  const b=document.createElement('button');b.className='choice-card choice-'+(i===0?'a':'b');b.setAttribute('aria-pressed','false');b.setAttribute('aria-label',t);
+  const letter=document.createElement('span');letter.className='choice-letter';letter.textContent=i===0?'A':'B';letter.setAttribute('aria-hidden','true');
+  const title=document.createElement('span');title.className='choice-title';title.textContent=t;
+  const state=document.createElement('span');state.className='choice-state';state.textContent='이쪽 선택하기';state.setAttribute('aria-hidden','true');
+  b.append(letter,title,state);
+  b.onclick=()=>{selectedAnswer=t;$('choices').querySelectorAll('button').forEach(x=>{const chosen=x===b;x.classList.toggle('selected',chosen);x.setAttribute('aria-pressed',String(chosen));x.querySelector('.choice-state').textContent=chosen?'✓ 나의 선택':'이쪽 선택하기'});$('chosenAnswer').textContent='나의 선택 · '+t;$('chosenAnswer').hidden=false};
+  $('choices').append(b)
+});$('follow').textContent=m==='balance'?'반대 선택에는 어떤 좋은 점이 있을까요?':m==='imagine'?'그 상상이 현실이 되면, 누구에게 어떤 변화가 생길까요?':'친구의 말에서 새롭게 알게 된 점은 무엇인가요?';document.querySelectorAll('input[type=checkbox]').forEach(x=>x.checked=false);updateSummary();setPhase('prep')}
+function updateSummary(){$('settingsSummary').textContent=$('level').options[$('level').selectedIndex].text+' · '+$('mode').options[$('mode').selectedIndex].text}
+function openModal(id){modalWasRunning=!!timer;pause();if(id==='settings'){for(const k of ['level','mode'])$(k).value=config[k];$('prepDuration').value=config.prep;$('speakDuration').value=config.speak}$(id).showModal()}
+function closeModal(id,resume=true){$(id).close();if(resume&&modalWasRunning)run();modalWasRunning=false}
+$('prepPause').onclick=toggle;$('speakPause').onclick=toggle;$('ready').onclick=()=>setPhase('speak',true);$('back').onclick=()=>setPhase('prep',true);$('restart').onclick=()=>setPhase('speak',true);$('finish').onclick=()=>{pause();completed=true;$('review').open=true;display();$('next').focus({preventScroll:true})};$('next').onclick=()=>{draw();window.scrollTo({top:0,behavior:'instant'});$('ready').focus({preventScroll:true})};$('settingsButton').onclick=()=>openModal('settings');$('closeSettings').onclick=()=>closeModal('settings');$('guideButton').onclick=()=>openModal('guide');$('closeGuide').onclick=()=>closeModal('guide');for(const id of ['settings','guide'])$(id).addEventListener('cancel',e=>{e.preventDefault();closeModal(id)});
+function applySettings(forceDraw=false){const previous=config;config={level:$('level').value,mode:$('mode').value,prep:Number($('prepDuration').value),speak:Number($('speakDuration').value)};const newTopic=forceDraw||previous.level!==config.level||previous.mode!==config.mode;const changedTime=previous[phase]!==config[phase];closeModal('settings',!newTopic&&!changedTime);if(newTopic)draw();else{updateSummary();if(changedTime)setPhase(phase)}}
+$('applySettings').onclick=()=>applySettings();$('draw').onclick=()=>applySettings(true);draw(true);
+</script></body></html>
