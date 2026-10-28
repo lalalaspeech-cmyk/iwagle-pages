@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#fff8ee">
   <title>할로윈 미션 뽑기 · 언어의 바다</title>
-  <meta name="description" content="버튼 하나로 할로윈 말하기 미션! 잰말놀이 초시계, 단어 세 개 이야기, 몸으로 말하기를 무작위로 만나요.">
+  <meta name="description" content="잰말놀이, 단어 세 개 이야기, 몸으로 말하기 중 원하는 놀이를 고르고 미션을 뽑아요. 잰말 초시계와 기록도 함께 즐겨요.">
   <link rel="preload" href="assets/fonts/Jua-Regular.ae14c026f102.woff2" as="font" type="font/woff2" crossorigin>
   <style>@font-face{font-family:'Jua';src:url('assets/fonts/Jua-Regular.ae14c026f102.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
 @font-face{font-family:'Gowun Dodum';src:url('assets/fonts/GowunDodum-Regular.4fb500c72638.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
@@ -22,6 +22,10 @@
 
 /* Keep the current best visible while the detailed leaderboard stays folded. */
 .best-record{color:#76518f;font-size:14px}.records ol{padding-left:0;list-style:none}.records li{display:flex;align-items:baseline;justify-content:space-between;gap:12px}.record-name{min-width:0;overflow-wrap:anywhere;word-break:break-word}.record-time{flex-shrink:0;white-space:nowrap;color:#6f4d8a;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}#stopwatchDisplay{font-size:clamp(30px,8vw,54px);overflow-wrap:anywhere}
+
+/* Choose an activity first; draw only within that activity. */
+.game-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:18px 0 15px}.game-choices button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-width:0;min-height:78px;padding:10px 7px;border:2px solid #dfcdec;border-radius:15px;background:#fffdfb;color:#76518f;font-family:'Jua','Gowun Dodum',sans-serif;font-size:19px;line-height:1.4;word-break:keep-all;overflow-wrap:anywhere}.game-choices button>span:first-child{font-size:24px;line-height:1.2}.game-choices button.is-active{background:#7653a1;border-color:#7653a1;color:#fff;box-shadow:0 3px 0 #573879}.game-choices button:focus-visible{outline:3px solid #37214f;outline-offset:4px}
+@media(max-width:420px){.game-choices{gap:6px;margin-top:15px}.game-choices button{font-size:15px;padding:9px 5px;min-height:82px}.game-choices button>span:first-child{font-size:23px}}
 </style>
 </head>
 <body>
@@ -36,8 +40,13 @@
     <section class="simple-heading" aria-labelledby="page-title">
       <p class="eyebrow"><span aria-hidden="true">✦</span> TRICK OR SPEAK!</p>
       <h1 id="page-title">할로윈 미션 뽑기</h1>
-      <p>잰말놀이 · 단어 3개 이야기 · 몸으로 말해요</p>
+      <p>놀이를 고르고, 그 안에서 미션을 뽑아요.</p>
     </section>
+    <div id="gameSelector" class="game-choices" role="group" aria-label="놀이 고르기">
+      <button type="button" data-game="tongue" aria-pressed="true" class="is-active"><span aria-hidden="true">👻</span><span>잰말놀이</span></button>
+      <button type="button" data-game="story" aria-pressed="false"><span aria-hidden="true">🎃</span><span>단어 3개 이야기</span></button>
+      <button type="button" data-game="charades" aria-pressed="false"><span aria-hidden="true">🦇</span><span>몸으로 말해요</span></button>
+    </div>
     <button id="drawMission" class="button button-orange mission-draw" type="button"><span aria-hidden="true">🎲</span> 미션 뽑기</button>
 
     <section id="missionCard" class="simple-mission" aria-labelledby="missionTitle" data-mission-id="" data-kind="tongue">
@@ -386,8 +395,8 @@
     charades: ['몸으로 말해요', '이번 제시어는 무엇일까요?', '제시어를 나만 확인하고, 친구가 맞히도록 표현해요.']
   };
   const records = new Map();
-  let bag = [];
-  let lastIndex = -1;
+  const bags = new Map();
+  let selectedKind = 'tongue';
   let mission = null;
   let renderId = null;
   let watchState = 'idle';
@@ -564,16 +573,20 @@
   }
 
   function nextIndex() {
-    if (bag.length === 0) {
-      bag = pool.map((_, index) => index);
-      for (let index = bag.length - 1; index > 0; index--) {
+    let state = bags.get(selectedKind);
+    if (!state || state.cards.length === 0) {
+      const lastIndex = state?.lastIndex ?? -1;
+      const cards = pool.map((item, index) => item.kind === selectedKind ? index : -1).filter(index => index >= 0);
+      for (let index = cards.length - 1; index > 0; index--) {
         const other = Math.floor(Math.random() * (index + 1));
-        [bag[index], bag[other]] = [bag[other], bag[index]];
+        [cards[index], cards[other]] = [cards[other], cards[index]];
       }
-      if (bag.length > 1 && bag.at(-1) === lastIndex) [bag[0], bag[bag.length - 1]] = [bag.at(-1), bag[0]];
+      if (cards.length > 1 && cards.at(-1) === lastIndex) [cards[0], cards[cards.length - 1]] = [cards.at(-1), cards[0]];
+      state = { cards, lastIndex };
+      bags.set(selectedKind, state);
     }
-    lastIndex = bag.pop();
-    return lastIndex;
+    state.lastIndex = state.cards.pop();
+    return state.lastIndex;
   }
 
   function drawMission(initial = false) {
@@ -586,6 +599,11 @@
     mission = pool[nextIndex()];
     $('missionCard').dataset.missionId = mission.id;
     $('missionCard').dataset.kind = mission.kind;
+    for (const button of $('gameSelector').querySelectorAll('button[data-game]')) {
+      const active = button.dataset.game === selectedKind;
+      button.setAttribute('aria-pressed', String(active));
+      button.classList.toggle('is-active', active);
+    }
     $('missionType').textContent = labels[mission.kind][0];
     $('missionLevel').hidden = mission.kind !== 'tongue';
     $('missionLevel').textContent = mission.level ?? '';
@@ -612,6 +630,15 @@
     if (!initial) $('missionTitle').focus({ preventScroll: false });
   }
 
+  for (const button of $('gameSelector').querySelectorAll('button[data-game]')) {
+    button.addEventListener('click', () => {
+      const next = button.dataset.game;
+      if (!labels[next] || next === selectedKind) return;
+      stopRendering();
+      selectedKind = next;
+      drawMission();
+    });
+  }
   $('drawMission').addEventListener('click', () => drawMission());
   $('stopwatchStart').addEventListener('click', startStopwatch);
   $('stopwatchStop').addEventListener('click', stopStopwatch);
