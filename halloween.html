@@ -4,27 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#fff8ee">
-  <title>할로윈 말하기 모험 · 언어의 바다</title>
-  <meta name="description" content="잰말놀이, 단어 세 개로 이야기 만들기, 몸으로 말하기! 함께 여섯 칸을 채우는 할로윈 말하기 보드게임.">
-  <link rel="preload" href="assets/fonts/Jua-Regular.bbeff7b43024.woff2" as="font" type="font/woff2" crossorigin>
-  <style>@font-face{font-family:'Jua';src:url('assets/fonts/Jua-Regular.bbeff7b43024.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:'Gowun Dodum';src:url('assets/fonts/GowunDodum-Regular.e3ec6bcd69ee.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+  <title>할로윈 미션 뽑기 · 언어의 바다</title>
+  <meta name="description" content="버튼 하나로 할로윈 말하기 미션! 잰말놀이 초시계, 단어 세 개 이야기, 몸으로 말하기를 무작위로 만나요.">
+  <link rel="preload" href="assets/fonts/Jua-Regular.ae14c026f102.woff2" as="font" type="font/woff2" crossorigin>
+  <style>@font-face{font-family:'Jua';src:url('assets/fonts/Jua-Regular.ae14c026f102.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Gowun Dodum';src:url('assets/fonts/GowunDodum-Regular.4fb500c72638.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
 :root{color-scheme:light;--cream:#fff8ee;--paper:#fffdf9;--ink:#342647;--muted:#73677e;--purple:#7352a5;--purple-dark:#573a82;--lavender:#f1e9fb;--orange:#ffb462;--orange-dark:#a94c15;--line:#e8dfee;font-family:'Gowun Dodum','Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--ink);background:var(--cream);font-synthesis:none}
-*{box-sizing:border-box}body{margin:0;line-height:1.65;background:radial-gradient(ellipse at 95% 22%,#ffe8ca80,transparent 40%),var(--cream);-webkit-font-smoothing:antialiased}button,input,select{font:inherit}button,a,select,summary{touch-action:manipulation}button,select,summary{cursor:pointer}button{border:0}a{color:inherit;text-decoration:none}h1,h2,h3,p{margin:0}h1,h2,h3,.button,.eyebrow,.season-badge,.game-tags,.art-label,.board,.mission-tag,.level-button,.level-control legend,.word-chip,.game-progress{font-family:'Jua','Gowun Dodum',sans-serif;font-weight:400}button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid #37214f;outline-offset:5px}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.season-header{border-bottom:1px solid #eadfec;background:#fffdfb}.header-inner{width:min(1160px,100%);margin:auto;padding:8px 28px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:16px}.brand{justify-self:center;grid-column:2}.brand-logo{position:relative;display:block;overflow:hidden;width:144px;aspect-ratio:3/2;flex-shrink:0}.brand-logo img{position:absolute;display:block;width:180%;max-width:none;height:auto;left:-40.833333%;top:-102%}.back-link{grid-column:1;grid-row:1;display:inline-flex;align-items:center;gap:8px;justify-self:start;min-height:44px;font-size:15px;color:#665376}.back-link span{font-size:22px}.header-note{grid-column:3;grid-row:1;justify-self:end;color:var(--muted);font-size:13px;text-align:right}.season-main,.game-main{width:min(1080px,100%);margin:auto;padding:48px 28px 28px}.season-intro{text-align:center;margin-bottom:32px}.eyebrow{font-size:13px;letter-spacing:1.8px;color:#8e5c7a;margin-bottom:10px}.eyebrow span{font-size:18px;vertical-align:middle;color:#da9860;margin-right:6px}h1{font-size:clamp(32px,5.4vw,49px);line-height:1.3;letter-spacing:-.5px}.season-intro>p:last-child{color:var(--muted);margin-top:15px;font-size:18px}.season-feature{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);border:1px solid #dfcfe9;border-radius:30px;overflow:hidden;background:#fffdf9;box-shadow:0 12px 36px #62437509}.season-art{position:relative;min-height:420px;background:#eee3f8;overflow:hidden}.art-moon{position:absolute;right:13%;top:12%;width:78px;height:78px;background:#fff2bd;border-radius:50%;box-shadow:0 0 0 14px #fff2bd25}.art-spark{position:absolute;color:#9375b6;z-index:2}.spark-one{left:17%;top:14%;font-size:38px}.spark-two{right:14%;top:47%;font-size:28px}.friendly-ghost{position:absolute;top:25%;left:24%;width:132px;height:153px;border-radius:70px 70px 24px 24px;background:#fffdf9;transform:rotate(-9deg);box-shadow:0 10px 0 #7e579a09}.friendly-ghost:before,.friendly-ghost:after{content:'';position:absolute;width:36px;height:32px;background:#fffdf9;top:64px;border-radius:50%}.friendly-ghost:before{left:-21px;transform:rotate(-20deg)}.friendly-ghost:after{right:-21px;transform:rotate(20deg)}.ghost-eyes{position:absolute;left:39px;top:48px;width:11px;height:16px;background:#59436e;border-radius:50%;box-shadow:41px 0 #59436e}.ghost-smile{position:absolute;left:56px;top:70px;width:21px;height:15px;border-bottom:4px solid #59436e;border-radius:0 0 50% 50%}.pumpkin{position:absolute;width:128px;height:110px;left:48%;top:51%;background:#ffb368;border:3px solid #e99a51;border-radius:46%;box-shadow:inset 22px 0 #f7a75e,inset -22px 0 #f7a75e;transform:rotate(7deg)}.pumpkin-stem{position:absolute;left:55px;top:-20px;width:17px;height:22px;background:#82a878;border-radius:8px 3px 0 0;transform:rotate(12deg)}.pumpkin-eyes{position:absolute;top:37px;left:32px;width:11px;height:15px;border-radius:50%;background:#75411f;box-shadow:44px 0 #75411f}.pumpkin-smile{position:absolute;left:45px;top:58px;width:33px;height:22px;border-bottom:5px solid #75411f;border-radius:0 0 50% 50%}.art-label{position:absolute;left:0;right:0;bottom:26px;text-align:center;letter-spacing:2px;color:#75508e;font-size:16px}.season-feature-copy{padding:38px 34px;align-self:center;min-width:0}.season-badge{display:inline-block;background:#fff0d7;color:#966023;padding:5px 12px;border-radius:999px;font-size:14px}.season-feature h2{font-size:33px;line-height:1.4;margin:14px 0 12px;word-break:keep-all}.season-feature-copy>p:not(.small-note){font-size:17px;color:var(--muted)}.game-tags{display:flex;gap:7px;flex-wrap:wrap;padding:0;list-style:none;margin:20px 0 24px}.game-tags li{border:1px solid #e1d5ec;color:#715489;border-radius:8px;padding:5px 9px;font-size:14px}.button{display:inline-flex;justify-content:center;align-items:center;gap:12px;min-height:54px;border:1px solid transparent;border-radius:15px;padding:13px 22px;font-size:21px;line-height:1.4;text-align:center;transition:background .15s,transform .15s}.button:active:not(:disabled){transform:translateY(2px)}.button:disabled{opacity:.45;cursor:default}.button-purple{background:var(--purple);color:#fff;box-shadow:0 4px 0 #573a82}.button-orange{background:#ffd197;color:#633816;border-color:#e6aa61;box-shadow:0 4px 0 #e7ae68}.button-soft{background:var(--lavender);color:#654286;border-color:#d9c7eb}.button-outline{background:#fffdf9;border-color:#cbb6df;color:#71508e}.season-start{width:100%}.small-note{font-size:12px!important;color:var(--muted);margin-top:13px!important;text-align:center}.together-note{display:flex;justify-content:center;gap:13px;align-items:center;margin:28px auto 0;color:var(--muted);font-size:14px}.together-note>span{font-size:27px}.together-note strong{color:#665076;font-weight:400}.season-footer{text-align:center;padding:12px 20px 28px;font-size:12px;color:#84778c}
-/* A short, shared-screen adventure: board first, one large mission at a time. */
-.game-main{padding-top:28px}.game-heading{display:flex;justify-content:space-between;align-items:center;gap:22px;margin-bottom:24px}.game-heading h1{font-size:clamp(30px,4.5vw,42px)}.game-heading .eyebrow{margin-bottom:7px}.game-heading .heading-copy{color:var(--muted);font-size:15px;margin-top:8px}.game-progress{flex-shrink:0;text-align:center;padding:12px 19px;border:1px solid #decee9;background:#fffdfb;border-radius:19px;color:#73518d;font-size:14px}.game-progress strong{display:block;font-size:28px;font-weight:400;line-height:1.3}.game-layout{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:22px;align-items:start}.board-panel{border:1px solid #e7d5ea;background:#f5eef9;border-radius:26px;padding:24px}.board-panel h2{font-size:21px;color:#684d82}.board-panel>p{font-size:14px;color:var(--muted);margin-top:5px}.board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;list-style:none;padding:0;margin:20px 0}.board li{position:relative;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:115px;padding:12px 5px;border:2px solid #e5d7ec;border-radius:19px;background:#fffdfb;color:#83738e;text-align:center;line-height:1.35}.board li:nth-child(3){grid-column:2;grid-row:2}.board li:nth-child(4){grid-column:1;grid-row:2}.board li:nth-child(5){grid-column:1;grid-row:3}.board li:nth-child(6){grid-column:2;grid-row:3}.board li.active,.board li[aria-current=step]{border-color:#b478cf;background:#fff8e9;color:#633f80;box-shadow:0 0 0 4px #b478cf18}.board li.complete{border-color:#b1d3bd;background:#edf7ef;color:#477453}.board .space-number,.board .tile-number{font-size:12px;color:#97839d}.board .space-icon,.board .tile-icon{font-size:29px;line-height:1.4}.board .space-label,.board .tile-label{font-size:15px}.board .space-check{position:absolute;top:6px;right:9px;font-size:16px;color:#477453}.board-finish{text-align:center;font-size:14px!important;color:#76568b!important;padding:12px;background:#fffdfb;border-radius:14px}.mission-card{position:relative;min-width:0;padding:28px;background:#fffdfb;border:1px solid #e1d2e7;border-radius:26px;box-shadow:0 8px 26px #6b468008}.mission-topline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.mission-tag{display:inline-block;padding:5px 12px;background:#f0e5fa;color:#70518a;border-radius:999px;font-size:15px}.mission-step{color:#8e7b98;font-size:13px}.mission-card h2{font-size:29px;line-height:1.4;margin:16px 0 8px;word-break:keep-all;overflow-wrap:anywhere}.mission-lead{color:var(--muted);font-size:15px}.level-control{min-width:0;padding:0;margin:20px 0;border:0}.level-control legend{font-size:16px;color:#71518b;margin-bottom:9px;padding:0}.level-buttons{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}.level-button{display:inline-flex;align-items:center;justify-content:center;min-width:0;min-height:45px;border:1px solid #d8c5e7;border-radius:11px;background:#fff;color:#76538e;font-size:18px}.level-button[aria-pressed=true]{border-color:var(--purple);background:var(--purple);color:#fff}.level-caption{font-size:12px;color:var(--muted);margin-top:8px}.mission-content{margin-top:20px;padding:23px 20px;background:#fff4e3;border:1px solid #f3dfbf;border-radius:19px;text-align:center}.mission-prompt{font-family:'Jua','Gowun Dodum',sans-serif;font-size:28px;line-height:1.6;color:#693f24;word-break:keep-all;overflow-wrap:anywhere;outline:none}.mission-prompt:focus-visible{outline:3px solid var(--purple);outline-offset:8px;border-radius:4px}.mission-tip{font-size:14px;line-height:1.7;color:#8b6a47;margin-top:13px}.word-chips{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:14px}.word-chip{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;background:#fffdf9;border:1px solid #eccb9b;border-radius:12px;color:#835220;font-size:23px}.mime-secret{margin-top:17px;background:#fff5e5;border:1px dashed #ddb780;border-radius:16px;padding:16px}.mime-secret summary{font-family:'Jua','Gowun Dodum',sans-serif;font-size:21px;color:#77542a;min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center}.mime-secret .mission-prompt{margin:12px 0 5px}.mime-warning{font-size:13px;color:#8b6a47;text-align:center;margin-top:8px}.mission-controls{display:grid;grid-template-columns:1fr;gap:12px;margin-top:20px}.mission-controls .button{width:100%}.mission-redraw{display:flex;justify-content:center;margin-top:13px}.mission-redraw .button{min-height:44px;padding:7px 16px;font-size:17px;box-shadow:none}.game-status{min-height:25px;text-align:center;margin-top:16px;color:#746080;font-size:14px}.game-rules{margin-top:22px;padding:16px 20px;border:1px solid #e6d9ec;border-radius:18px;background:#fffdf9;color:var(--muted);font-size:14px}.game-rules summary{font-family:'Jua','Gowun Dodum',sans-serif;min-height:32px;color:#71518b;font-size:18px}.game-rules ol{margin:10px 0 0;padding-left:22px}.game-rules li+li{margin-top:7px}.finish-card{text-align:center;padding:38px 28px;border:1px solid #dfc8e8;border-radius:26px;background:#fffdfb;box-shadow:0 8px 26px #6b468008}.finish-emoji{font-size:65px;line-height:1.4}.finish-card h2{font-size:32px;margin-top:10px}.finish-card p{color:var(--muted);margin:12px 0 22px}.finish-card .button{width:100%;margin-top:12px}.finish-card .finish-subtitle{color:#856c94;font-size:14px}.game-bottom-note{margin-top:24px;text-align:center;color:var(--muted);font-size:13px}.plain-link{text-decoration:underline;text-underline-offset:4px;color:#76518f}.text-button{min-height:44px;padding:7px 8px;background:transparent;color:#76518f;font-size:14px;text-decoration:underline;text-underline-offset:4px}
-@media(hover:hover){.button-purple:hover{background:#65448f}.button-orange:hover{background:#ffc27c}.button-soft:hover{background:#e8daf5}.button-outline:hover,.level-button:hover:not([aria-pressed=true]){background:#f5eefb}.back-link:hover,.plain-link:hover{color:#432958}}
-@media(max-width:760px){.header-note{display:none}.header-inner{padding:7px 20px}.brand-logo{width:126px}.back-link{font-size:13px;gap:5px}.season-main{padding:30px 20px 22px}.season-intro{margin-bottom:24px}.season-intro>p:last-child{font-size:16px}.season-feature{grid-template-columns:minmax(0,1fr);max-width:540px;margin:auto}.season-art{min-height:265px}.art-moon{width:57px;height:57px;right:21%;top:12%}.friendly-ghost{width:108px;height:122px;top:22%;left:30%}.ghost-eyes{left:29px;top:38px;width:9px;height:14px;box-shadow:37px 0 #59436e}.ghost-smile{left:45px;top:58px;width:18px;height:13px}.friendly-ghost:before,.friendly-ghost:after{top:54px;width:29px;height:24px}.friendly-ghost:before{left:-17px}.friendly-ghost:after{right:-17px}.pumpkin{width:102px;height:89px;left:51%;top:48%}.pumpkin-stem{left:42px;top:-17px;width:15px;height:19px}.pumpkin-eyes{top:29px;left:25px;width:9px;height:13px;box-shadow:33px 0 #75411f}.pumpkin-smile{left:34px;top:47px;width:28px;height:17px;border-width:4px}.art-label{bottom:16px;font-size:13px}.spark-one{top:12%;left:20%;font-size:29px}.spark-two{top:49%;right:19%;font-size:23px}.season-feature-copy{padding:26px 24px}.season-feature h2{font-size:29px}.together-note{align-items:flex-start;font-size:13px;max-width:520px}.game-main{padding:24px 20px}.game-heading{margin-bottom:20px;gap:13px}.game-heading .heading-copy{font-size:14px}.game-progress{padding:10px 13px;font-size:12px;border-radius:15px}.game-progress strong{font-size:25px}.game-layout{grid-template-columns:minmax(0,1fr);gap:16px}.board-panel{padding:18px}.board-panel h2{font-size:19px}.board-panel>p{font-size:13px}.board{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;margin:15px 0}.board li{min-height:89px;padding:8px 2px;border-radius:13px;border-width:1px}.board li:nth-child(n){grid-column:auto;grid-row:auto}.board .space-icon,.board .tile-icon{font-size:24px}.board .space-label,.board .tile-label{font-size:11px}.board .space-number,.board .tile-number{font-size:10px}.board-finish{padding:9px;font-size:12px!important}.mission-card{padding:23px}.mission-card h2{font-size:27px}.mission-prompt{font-size:27px}.game-rules{margin-top:16px}.game-bottom-note{font-size:12px}}
-@media(max-width:420px){.header-inner{padding:7px 14px;gap:8px}.brand-logo{width:114px}.back-link{font-size:12px;gap:4px}.back-link span{font-size:18px}.season-main,.game-main{padding-left:16px;padding-right:16px}.eyebrow{font-size:11px;letter-spacing:1.1px}.season-intro h1{font-size:32px}.season-feature-copy{padding:24px 20px}.season-feature h2{font-size:27px}.season-feature-copy>p:not(.small-note){font-size:15px}.game-tags{gap:6px}.game-tags li{font-size:12px;padding:5px 7px}.small-note{font-size:11px!important}.game-heading{align-items:flex-start}.game-heading h1{font-size:29px}.game-heading .heading-copy{font-size:13px}.game-progress{padding:9px 10px;min-width:63px}.game-progress strong{font-size:23px}.game-progress span{font-size:11px}.board-panel{padding:15px 12px}.board{gap:5px}.board li{min-height:83px;border-radius:10px}.board .space-icon,.board .tile-icon{font-size:21px}.board .space-label,.board .tile-label{font-size:10px}.mission-card{padding:20px 17px}.mission-card h2{font-size:25px}.mission-lead{font-size:14px}.mission-content{padding:20px 15px}.mission-prompt{font-size:25px}.mission-tip{font-size:13px}.level-buttons{gap:5px}.level-button{min-height:44px;font-size:17px}.button{font-size:20px;padding:12px 16px}.word-chip{font-size:21px;padding:8px 12px}.finish-card{padding:28px 20px}.finish-card h2{font-size:28px}.season-footer{font-size:11px}}
-@media(max-width:350px){.back-link{font-size:11px}.brand-logo{width:105px}.game-heading h1{font-size:26px}.game-progress{min-width:58px;padding:8px}.board .space-label,.board .tile-label{font-size:9px}.board .space-icon,.board .tile-icon{font-size:19px}.season-intro h1{font-size:29px}.season-feature h2{font-size:25px}}
+*{box-sizing:border-box}body{margin:0;line-height:1.65;background:radial-gradient(ellipse at 95% 22%,#ffe8ca80,transparent 40%),var(--cream);-webkit-font-smoothing:antialiased}button,input,select{font:inherit}button,a,select,summary{touch-action:manipulation}button,select,summary{cursor:pointer}button{border:0}a{color:inherit;text-decoration:none}h1,h2,h3,p{margin:0}h1,h2,h3,.button,.eyebrow,.season-badge,.game-tags,.art-label,.mission-tag,.word-chip{font-family:'Jua','Gowun Dodum',sans-serif;font-weight:400}button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid #37214f;outline-offset:5px}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.season-header{border-bottom:1px solid #eadfec;background:#fffdfb}.header-inner{width:min(1160px,100%);margin:auto;padding:8px 28px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:16px}.brand{justify-self:center;grid-column:2}.brand-logo{position:relative;display:block;overflow:hidden;width:144px;aspect-ratio:3/2;flex-shrink:0}.brand-logo img{position:absolute;display:block;width:180%;max-width:none;height:auto;left:-40.833333%;top:-102%}.back-link{grid-column:1;grid-row:1;display:inline-flex;align-items:center;gap:8px;justify-self:start;min-height:44px;font-size:15px;color:#665376}.back-link span{font-size:22px}.header-note{grid-column:3;grid-row:1;justify-self:end;color:var(--muted);font-size:13px;text-align:right}.season-main{width:min(1080px,100%);margin:auto;padding:48px 28px 28px}.season-intro{text-align:center;margin-bottom:32px}.eyebrow{font-size:13px;letter-spacing:1.8px;color:#8e5c7a;margin-bottom:10px}.eyebrow span{font-size:18px;vertical-align:middle;color:#da9860;margin-right:6px}h1{font-size:clamp(32px,5.4vw,49px);line-height:1.3;letter-spacing:-.5px}.season-intro>p:last-child{color:var(--muted);margin-top:15px;font-size:18px}.season-feature{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);border:1px solid #dfcfe9;border-radius:30px;overflow:hidden;background:#fffdf9;box-shadow:0 12px 36px #62437509}.season-art{position:relative;min-height:420px;background:#eee3f8;overflow:hidden}.art-moon{position:absolute;right:13%;top:12%;width:78px;height:78px;background:#fff2bd;border-radius:50%;box-shadow:0 0 0 14px #fff2bd25}.art-spark{position:absolute;color:#9375b6;z-index:2}.spark-one{left:17%;top:14%;font-size:38px}.spark-two{right:14%;top:47%;font-size:28px}.friendly-ghost{position:absolute;top:25%;left:24%;width:132px;height:153px;border-radius:70px 70px 24px 24px;background:#fffdf9;transform:rotate(-9deg);box-shadow:0 10px 0 #7e579a09}.friendly-ghost:before,.friendly-ghost:after{content:'';position:absolute;width:36px;height:32px;background:#fffdf9;top:64px;border-radius:50%}.friendly-ghost:before{left:-21px;transform:rotate(-20deg)}.friendly-ghost:after{right:-21px;transform:rotate(20deg)}.ghost-eyes{position:absolute;left:39px;top:48px;width:11px;height:16px;background:#59436e;border-radius:50%;box-shadow:41px 0 #59436e}.ghost-smile{position:absolute;left:56px;top:70px;width:21px;height:15px;border-bottom:4px solid #59436e;border-radius:0 0 50% 50%}.pumpkin{position:absolute;width:128px;height:110px;left:48%;top:51%;background:#ffb368;border:3px solid #e99a51;border-radius:46%;box-shadow:inset 22px 0 #f7a75e,inset -22px 0 #f7a75e;transform:rotate(7deg)}.pumpkin-stem{position:absolute;left:55px;top:-20px;width:17px;height:22px;background:#82a878;border-radius:8px 3px 0 0;transform:rotate(12deg)}.pumpkin-eyes{position:absolute;top:37px;left:32px;width:11px;height:15px;border-radius:50%;background:#75411f;box-shadow:44px 0 #75411f}.pumpkin-smile{position:absolute;left:45px;top:58px;width:33px;height:22px;border-bottom:5px solid #75411f;border-radius:0 0 50% 50%}.art-label{position:absolute;left:0;right:0;bottom:26px;text-align:center;letter-spacing:2px;color:#75508e;font-size:16px}.season-feature-copy{padding:38px 34px;align-self:center;min-width:0}.season-badge{display:inline-block;background:#fff0d7;color:#966023;padding:5px 12px;border-radius:999px;font-size:14px}.season-feature h2{font-size:33px;line-height:1.4;margin:14px 0 12px;word-break:keep-all}.season-feature-copy>p:not(.small-note){font-size:17px;color:var(--muted)}.game-tags{display:flex;gap:7px;flex-wrap:wrap;padding:0;list-style:none;margin:20px 0 24px}.game-tags li{border:1px solid #e1d5ec;color:#715489;border-radius:8px;padding:5px 9px;font-size:14px}.button{display:inline-flex;justify-content:center;align-items:center;gap:12px;min-height:54px;border:1px solid transparent;border-radius:15px;padding:13px 22px;font-size:21px;line-height:1.4;text-align:center;transition:background .15s,transform .15s}.button:active:not(:disabled){transform:translateY(2px)}.button:disabled{opacity:.45;cursor:default}.button-purple{background:var(--purple);color:#fff;box-shadow:0 4px 0 #573a82}.button-orange{background:#ffd197;color:#633816;border-color:#e6aa61;box-shadow:0 4px 0 #e7ae68}.button-soft{background:var(--lavender);color:#654286;border-color:#d9c7eb}.button-outline{background:#fffdf9;border-color:#cbb6df;color:#71508e}.season-start{width:100%}.small-note{font-size:12px!important;color:var(--muted);margin-top:13px!important;text-align:center}.together-note{display:flex;justify-content:center;gap:13px;align-items:center;margin:28px auto 0;color:var(--muted);font-size:14px}.together-note>span{font-size:27px}.together-note strong{color:#665076;font-weight:400}.season-footer{text-align:center;padding:12px 20px 28px;font-size:12px;color:#84778c}
+/* One draw button, one mission: no setup screens or board state. */
+.simple-game-main{width:min(780px,100%);margin:auto;padding:25px 24px 20px}.simple-heading{margin-bottom:18px;text-align:center}.simple-heading h1{font-size:clamp(29px,5vw,39px);line-height:1.35}.simple-heading .eyebrow{margin-bottom:7px}.simple-heading>p:last-child{color:var(--muted);font-size:15px;margin-top:8px}.mission-draw{width:100%;min-height:65px;font-size:27px;margin-bottom:22px;box-shadow:0 4px 0 #e7ae68}.mission-draw>span{font-size:27px}.simple-mission{min-width:0;padding:27px;background:#fffdfb;border:1px solid #e1d2e7;border-radius:25px;box-shadow:0 8px 26px #6b468008}.mission-tag{display:inline-block;padding:5px 12px;background:#f0e5fa;color:#70518a;border-radius:999px;font-family:'Jua','Gowun Dodum',sans-serif;font-size:14px}.simple-mission h2{font-size:27px;line-height:1.4;word-break:keep-all;margin-top:12px;outline:none}.simple-mission h2:focus-visible{outline:3px solid var(--purple);outline-offset:5px;border-radius:4px}.mission-intro{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.7}.mission-content{padding:21px 20px;margin-top:18px;border:1px solid #f3dfbf;border-radius:18px;background:#fff4e3;text-align:center}.mission-prompt{font-family:'Jua','Gowun Dodum',sans-serif;font-size:28px;line-height:1.7;color:#693f24;word-break:keep-all;overflow-wrap:anywhere}.stopwatch-panel,.countdown-panel{margin-top:18px;text-align:center;padding:17px 16px;background:#faf6fd;border:1px solid #e4d8ed;border-radius:18px}.time-label{font-family:'Jua','Gowun Dodum',sans-serif;font-size:16px;color:#8a6b9e}.time-display{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;font-size:65px;line-height:1.3;font-weight:650;letter-spacing:-2px;color:#61417e;font-variant-numeric:tabular-nums}.time-display.is-urgent{color:#c2404d}.time-unit{font-family:'Gowun Dodum',sans-serif;font-size:16px;letter-spacing:0;color:#8a7596;margin-left:5px}.time-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}.time-controls .button{min-height:48px;padding:9px 7px;border-radius:12px;font-size:18px;box-shadow:none}.timer-message{min-height:23px;margin-top:12px;font-size:13px;color:#8a7596}.record-area{margin-top:21px;padding-top:18px;border-top:1px solid #eee5f1}.record-area>p{font-size:13px;color:var(--muted);margin-bottom:12px}.record-form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:end}.record-form label{font-size:13px;color:#7b6388;min-width:0}.record-form label span{color:#a18cae}.record-form input{display:block;min-width:0;width:100%;min-height:48px;margin-top:6px;padding:10px 12px;border:1px solid #d7c7e2;border-radius:12px;background:#fff;color:var(--ink);font-size:15px}.record-form .button{min-height:48px;border-radius:12px;font-size:18px;padding:10px 16px;box-shadow:none}.records{margin-top:18px;padding:14px 16px;background:#f7f1fc;border-radius:14px;color:#79638b;font-size:14px}.records summary{font-family:'Jua','Gowun Dodum',sans-serif;min-height:32px;font-size:18px;color:#77558c;cursor:pointer}.records ol{margin:12px 0 0;padding-left:24px}.records li{padding:7px 0;border-top:1px solid #e6daef;overflow-wrap:anywhere}.record-note{font-size:12px;color:#8c7b96;margin-top:12px;line-height:1.7}.word-chips{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:6px 0}.word-chip{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;background:#fffdf9;border:1px solid #eccb9b;border-radius:12px;color:#835220;font-size:25px;font-family:'Jua','Gowun Dodum',sans-serif}.story-guide{font-size:14px;color:#8b6a47;margin-top:13px}.story-guide span{color:#bc9a72;margin:0 5px}.secret-cover{font-family:'Jua','Gowun Dodum',sans-serif;font-size:23px;color:#88612f;line-height:1.6}.secret-cover span{display:block;font-size:35px;margin-bottom:5px}.secret-content>.button{width:100%;margin-top:14px;font-size:19px;min-height:48px;box-shadow:none}.game-status{font-size:13px;color:#8a7596;min-height:24px;text-align:center;margin-top:14px}.play-note{margin-top:20px;font-size:13px;color:var(--muted);text-align:center;line-height:1.8}.play-note a{display:inline-block;min-height:44px;padding:7px 8px}.plain-link{text-decoration:underline;text-underline-offset:4px;color:#76518f}.game-rules{margin-top:18px;padding:15px 18px;border:1px solid #e6d9ec;border-radius:16px;background:#fffdf9;color:var(--muted);font-size:14px}.game-rules summary{font-family:'Jua','Gowun Dodum',sans-serif;min-height:32px;color:#71518b;font-size:18px}.game-rules p{margin-top:9px}.small-pill{font-family:'Gowun Dodum',sans-serif;font-size:12px;color:#8c729e;margin-left:9px}.record-message{color:#76518f;font-size:13px;margin-top:11px;min-height:22px}input:focus-visible{outline:3px solid #37214f;outline-offset:4px}
+@media(hover:hover){.button-purple:hover{background:#65448f}.button-orange:hover{background:#ffc27c}.button-soft:hover{background:#e8daf5}.button-outline:hover{background:#f5eefb}.back-link:hover,.plain-link:hover{color:#432958}}
+@media(max-width:760px){.header-note{display:none}.header-inner{padding:7px 20px}.brand-logo{width:126px}.back-link{font-size:13px;gap:5px}.season-main{padding:30px 20px 22px}.season-intro{margin-bottom:24px}.season-intro>p:last-child{font-size:16px}.season-feature{grid-template-columns:minmax(0,1fr);max-width:540px;margin:auto}.season-art{min-height:265px}.art-moon{width:57px;height:57px;right:21%;top:12%}.friendly-ghost{width:108px;height:122px;top:22%;left:30%}.ghost-eyes{left:29px;top:38px;width:9px;height:14px;box-shadow:37px 0 #59436e}.ghost-smile{left:45px;top:58px;width:18px;height:13px}.friendly-ghost:before,.friendly-ghost:after{top:54px;width:29px;height:24px}.friendly-ghost:before{left:-17px}.friendly-ghost:after{right:-17px}.pumpkin{width:102px;height:89px;left:51%;top:48%}.pumpkin-stem{left:42px;top:-17px;width:15px;height:19px}.pumpkin-eyes{top:29px;left:25px;width:9px;height:13px;box-shadow:33px 0 #75411f}.pumpkin-smile{left:34px;top:47px;width:28px;height:17px;border-width:4px}.art-label{bottom:16px;font-size:13px}.spark-one{top:12%;left:20%;font-size:29px}.spark-two{top:49%;right:19%;font-size:23px}.season-feature-copy{padding:26px 24px}.season-feature h2{font-size:29px}.together-note{align-items:flex-start;font-size:13px;max-width:520px}.simple-game-main{padding:21px 20px 18px}.simple-mission{padding:23px}.simple-heading>p:last-child{font-size:14px}}
+@media(max-width:420px){.header-inner{padding:7px 14px;gap:8px}.brand-logo{width:114px}.back-link{font-size:12px;gap:4px}.back-link span{font-size:18px}.season-main,.simple-game-main{padding-left:16px;padding-right:16px}.eyebrow{font-size:11px;letter-spacing:1.1px}.season-intro h1{font-size:32px}.season-feature-copy{padding:24px 20px}.season-feature h2{font-size:27px}.season-feature-copy>p:not(.small-note){font-size:15px}.game-tags{gap:6px}.game-tags li{font-size:12px;padding:5px 7px}.small-note{font-size:11px!important}.simple-heading{margin-bottom:15px}.simple-heading h1{font-size:30px}.simple-heading>p:last-child{font-size:13px}.mission-draw{min-height:60px;font-size:25px;margin-bottom:19px}.simple-mission{padding:20px 17px}.simple-mission h2{font-size:25px}.mission-content{padding:18px 15px;margin-top:15px}.mission-prompt{font-size:26px;line-height:1.7}.mission-intro{font-size:13px}.stopwatch-panel,.countdown-panel{padding:14px 12px;margin-top:15px}.time-display{font-size:59px}.time-controls{gap:6px}.time-controls .button{font-size:17px;padding:9px 5px}.record-form{grid-template-columns:minmax(0,1fr)}.record-form .button{width:100%;font-size:19px}.word-chip{font-size:23px;padding:9px 13px}.story-guide{font-size:13px}.season-footer{font-size:11px}.play-note{font-size:12px}.records{padding:13px 14px}}
+@media(max-width:350px){.back-link{font-size:11px}.brand-logo{width:105px}.simple-heading h1{font-size:27px}.simple-mission h2{font-size:23px}.mission-prompt{font-size:24px}.time-display{font-size:54px}.time-controls .button{font-size:15px}.season-intro h1{font-size:29px}.season-feature h2{font-size:25px}.small-pill{display:block;margin:5px 0 0}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-/* Native controls keep the activity usable with keyboards and a shared classroom screen. */
-.game-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 22px}.game-tabs button{display:flex;align-items:center;justify-content:center;gap:10px;min-width:0;min-height:66px;padding:13px 12px;border:1px solid #e0d0eb;border-radius:17px;background:#fffdfb;color:#78618b;font-family:'Jua','Gowun Dodum',sans-serif;font-size:20px;line-height:1.4}.game-tabs button>span:first-child{font-size:28px}.game-tabs button[aria-pressed=true]{background:#7853a4;color:#fff;border-color:#7853a4;box-shadow:0 4px 0 #593d7b}.board .board-number{display:grid;place-items:center;width:37px;height:37px;font-size:23px;line-height:1;border-radius:50%;background:#f1e9f5;color:#8e75a0;margin-bottom:4px}.board .board-mark{font-size:16px}.board li.is-current{border-color:#b478cf;background:#fff6df;color:#633f80;box-shadow:0 0 0 4px #b478cf18}.board li.is-current .board-number{background:#ffd397;color:#87501e}.board li.is-complete{border-color:#aed1b9;background:#edf7ef;color:#477453}.board li.is-complete .board-number{background:#d3ecd9;color:#477453}.board li.is-complete:after{content:'✓';position:absolute;top:8px;right:10px;font-family:system-ui,sans-serif;font-size:17px}.board-actions{display:flex;flex-direction:column;align-items:center;margin-top:18px;gap:7px}.board-actions>.button{width:100%}.game-tabs button:active{transform:translateY(1px)}#gameTitle:focus-visible{outline:3px solid var(--purple);outline-offset:5px;border-radius:4px}.challenge-settings{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:13px;margin-top:21px}.challenge-settings label,.duration-setting{display:block;min-width:0;color:#766180;font-size:14px}.challenge-settings .sentence-picker{grid-column:1/-1}select{display:block;min-width:0;width:100%;min-height:48px;padding:9px 28px 9px 12px;margin-top:7px;border:1px solid #d6c5e1;border-radius:12px;background:#fff;color:#523d64;font-size:15px;line-height:1.5;text-overflow:ellipsis}.practice-note{text-align:center;font-size:13px;color:var(--muted);margin-top:14px}.self-check-note{text-align:center;font-size:12px;line-height:1.7;color:#8b7893;margin-top:12px}.story-content{padding:20px 16px 25px}.card-kicker{color:#8b6a47;font-size:14px}.story-guide{margin-top:17px;padding:14px 16px;border-radius:14px;background:#f7f1fc;font-size:14px;color:#79638b}.story-guide summary{min-height:30px;font-family:'Jua','Gowun Dodum',sans-serif;font-size:18px;color:#77558c}.story-guide p{margin-top:12px}.story-guide p span{padding:0 5px;color:#b591c8}.duration-setting{margin-top:20px}.duration-setting select{max-width:200px}.charades-rule{margin-top:19px;color:#7c658c;font-size:15px;padding:14px 17px;border-radius:14px;background:#f6f0fb}.secret-content{background:#fff4e3}.secret-cover{font-family:'Jua','Gowun Dodum',sans-serif;font-size:24px;color:#88612f;line-height:1.6}.secret-cover>span{display:block;font-size:43px;margin-bottom:7px}.secret-content>.button{margin-top:17px;font-size:18px;width:100%;box-shadow:none}.charade-actions{grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr)}.game-timer-panel{margin-top:22px;padding:19px 16px 15px;border:1px solid #e0d4eb;border-radius:18px;background:#faf6fd;text-align:center}.timer-phase{font-family:'Jua','Gowun Dodum',sans-serif;font-size:18px;color:#8a6b9e}.game-timer{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;font-weight:650;font-variant-numeric:tabular-nums;font-size:63px;line-height:1.3;letter-spacing:-2px;color:#61417e}.game-timer.is-urgent{color:#c2404d}.timer-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:12px}.timer-controls .button{padding:9px 6px;min-height:46px;border-radius:12px;font-size:16px;box-shadow:none}.story-ready{width:100%;margin-top:12px;min-height:48px;font-size:18px}.timer-message{margin-top:14px;min-height:22px;color:#8a7596;font-size:12px}.game-main:has(.game-timer-panel:not([hidden])) .mission-card{min-height:0}
-@media(hover:hover){.game-tabs button:hover:not([aria-pressed=true]){background:#f4ecfb;border-color:#bb9bd1}}
-@media(max-width:760px){.game-tabs{gap:8px;margin-bottom:18px}.game-tabs button{font-size:18px;min-height:63px;gap:8px}.game-tabs button>span:first-child{font-size:25px}.board .board-number{width:29px;height:29px;font-size:19px}.board .board-mark{font-size:12px}.board li.is-complete:after{top:3px;right:4px;font-size:12px}.board-actions{flex-direction:row;gap:12px;margin-top:13px}.board-actions>.button{width:auto;flex:1;min-height:48px;font-size:19px;padding:10px 15px;box-shadow:0 3px 0 #e7ae68}.board-actions .text-button{flex-shrink:0;padding:7px 10px}.game-status{font-size:13px;margin-top:14px}.mission-content{margin-top:17px}.challenge-settings{margin-top:18px}.game-timer{font-size:60px}}
-@media(max-width:420px){.game-tabs{gap:6px}.game-tabs button{flex-direction:column;gap:4px;padding:10px 3px;font-size:15px;min-height:82px;border-radius:14px}.game-tabs button>span:first-child{font-size:27px}.challenge-settings{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:11px}.challenge-settings label{font-size:13px}select{font-size:14px;padding:10px 23px 10px 10px}.board .board-number{width:27px;height:27px;font-size:18px}.board .board-mark{font-size:11px}.practice-note,.self-check-note{font-size:12px}.game-timer-panel{padding:17px 12px 13px}.secret-cover{font-size:22px}.charades-rule{font-size:14px}.timer-controls .button{font-size:15px}.card-kicker{font-size:13px}.level-caption{font-size:11px}.mission-tag{font-size:13px}.mission-step{font-size:11px}.mission-topline{gap:8px}.game-main .mission-prompt{font-size:26px;line-height:1.75}}
-@media(max-width:350px){.game-tabs button{font-size:13px}.game-tabs button>span:first-child{font-size:24px}.board .board-number{width:25px;height:25px;font-size:17px}.board .board-mark{font-size:10px}.challenge-settings{grid-template-columns:minmax(0,1fr)}.challenge-settings .sentence-picker{grid-column:auto}.game-main .mission-prompt{font-size:24px}.mission-card h2{font-size:24px}}
+
+/* Keep the current best visible while the detailed leaderboard stays folded. */
+.best-record{color:#76518f;font-size:14px}.records ol{padding-left:0;list-style:none}.records li{display:flex;align-items:baseline;justify-content:space-between;gap:12px}.record-name{min-width:0;overflow-wrap:anywhere;word-break:break-word}.record-time{flex-shrink:0;white-space:nowrap;color:#6f4d8a;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}#stopwatchDisplay{font-size:clamp(30px,8vw,54px);overflow-wrap:anywhere}
 </style>
 </head>
 <body>
@@ -35,92 +32,61 @@
       <a class="header-note plain-link" href="./">1분스피치로 돌아가기</a>
     </div>
   </header>
-  <main class="game-main">
-    <section class="game-heading" aria-labelledby="page-title">
-      <div>
-        <p class="eyebrow"><span aria-hidden="true">✦</span> TRICK OR SPEAK!</p>
-        <h1 id="page-title">할로윈 말하기 모험</h1>
-        <p class="heading-copy">틀려도 웃고, 도전하면 한 걸음!<br>함께 여섯 칸을 채워 봐요.</p>
-      </div>
-      <div class="game-progress"><strong><span id="stampCount">0</span> / 6</strong><span>모은 도장</span></div>
+  <main class="simple-game-main">
+    <section class="simple-heading" aria-labelledby="page-title">
+      <p class="eyebrow"><span aria-hidden="true">✦</span> TRICK OR SPEAK!</p>
+      <h1 id="page-title">할로윈 미션 뽑기</h1>
+      <p>잰말놀이 · 단어 3개 이야기 · 몸으로 말해요</p>
     </section>
+    <button id="drawMission" class="button button-orange mission-draw" type="button"><span aria-hidden="true">🎲</span> 미션 뽑기</button>
 
-    <div id="gameTabs" class="game-tabs" role="group" aria-label="말하기 놀이 고르기">
-      <button type="button" data-game="tongue" aria-pressed="true" class="is-active"><span aria-hidden="true">👻</span><span>잰말놀이</span></button>
-      <button type="button" data-game="story" aria-pressed="false"><span aria-hidden="true">🎃</span><span>단어 3개 이야기</span></button>
-      <button type="button" data-game="charades" aria-pressed="false"><span aria-hidden="true">🦇</span><span>몸으로 말해요</span></button>
-    </div>
+    <section id="missionCard" class="simple-mission" aria-labelledby="missionTitle" data-mission-id="" data-kind="tongue">
+      <div><span id="missionType" class="mission-tag">잰말놀이</span><span id="missionLevel" class="small-pill"></span></div>
+      <h2 id="missionTitle" tabindex="-1">어떤 미션이 나올까요?</h2>
+      <p id="missionIntro" class="mission-intro">한 번 정확하게 읽어요. 같은 문장으로 시간을 비교해요.</p>
 
-    <div class="game-layout">
-      <aside class="board-panel" aria-labelledby="board-title">
-        <h2 id="board-title">우리의 호박 모험길 <span aria-hidden="true">🎃</span></h2>
-        <p>미션을 해내면 도장을 하나씩 모아요.</p>
-        <ol id="boardProgress" class="board" aria-label="여섯 칸 도전 진행 상황">
-          <li aria-current="step"><span class="board-number">1</span><span class="board-mark">도전</span></li>
-          <li><span class="board-number">2</span><span class="board-mark">미션</span></li>
-          <li><span class="board-number">3</span><span class="board-mark">미션</span></li>
-          <li><span class="board-number">4</span><span class="board-mark">미션</span></li>
-          <li><span class="board-number">5</span><span class="board-mark">미션</span></li>
-          <li><span class="board-number">6</span><span class="board-mark">미션</span></li>
-        </ol>
-        <p class="board-finish">한 명씩 차례대로, 또는 다 같이 도전!</p>
-        <div class="board-actions">
-          <button id="rollMission" class="button button-orange" type="button"><span aria-hidden="true">🎲</span> 미션 뽑기</button>
-          <button id="newGame" class="text-button" type="button">새 게임</button>
-        </div>
-        <p id="gameStatus" class="game-status" role="status" aria-atomic="true">첫 번째 미션을 골라 도전해 볼까요?</p>
-      </aside>
-
-      <section class="mission-card" aria-labelledby="gameTitle">
-        <div class="mission-topline"><span class="mission-tag">오늘의 도전</span><span class="mission-step">정답보다 도전하는 마음!</span></div>
-        <h2 id="gameTitle" tabindex="-1">꼬이지 않게, 잰말놀이!</h2>
-        <p id="gameIntro" class="mission-lead">천천히 또박또박 연습한 뒤, 나만의 속도로 도전해요.</p>
-
-        <div id="tonguePanel">
-          <div class="challenge-settings">
-            <label for="tongueLevel">도전 레벨<select id="tongueLevel"><option value="0">LEVEL 1 · 꼬마 유령</option></select></label>
-            <label for="repeatGoal">연속으로 몇 번?<select id="repeatGoal"><option value="1">1번</option><option value="2">2번</option><option value="3">3번</option></select></label>
-            <label class="sentence-picker" for="tongueSentence">연습할 문장<select id="tongueSentence"><option value="0">첫 번째 문장</option></select></label>
-          </div>
-          <p class="level-caption">학년과 상관없이 원하는 레벨을 골라도 괜찮아요.</p>
-          <div class="mission-content"><p id="tongueText" class="mission-prompt">나에게 맞는 문장을 골라 도전해요.</p></div>
-          <p id="tongueNote" class="practice-note">먼저 천천히 읽고, 목표한 횟수만큼 이어 말해 보세요.</p>
-          <div class="mission-controls"><button id="tongueSuccess" type="button" class="button button-purple">성공했어요 <span aria-hidden="true">✓</span></button></div>
-          <p class="self-check-note">직접 확인하고 눌러요. 목소리를 녹음하거나 판정하지 않아요.</p>
-        </div>
-
-        <div id="storyPanel" hidden>
-          <div class="mission-content story-content"><p class="card-kicker">이 세 단어가 모두 나오는 이야기!</p><div id="storyWords" class="word-chips" aria-label="이야기에 넣을 세 단어"></div></div>
-          <details class="story-guide"><summary>이야기 시작이 막막하다면?</summary><p>처음에는… <span aria-hidden="true">→</span> 그런데… <span aria-hidden="true">→</span> 그래서…</p><p>세 단어를 모두 넣으면, 어떤 이야기든 좋아요.</p></details>
-          <label class="duration-setting" for="storyDuration">이야기할 시간<select id="storyDuration"><option value="30">30초</option><option value="60" selected>1분</option><option value="90">1분 30초</option></select></label>
-          <div class="mission-controls"><button id="storySuccess" type="button" class="button button-purple">이야기 다 했어요 <span aria-hidden="true">✓</span></button></div>
-        </div>
-
-        <div id="charadesPanel" hidden>
-          <p class="charades-rule">맞히는 친구는 화면을 보지 않아요.<br>말과 소리 없이 몸으로 표현해요.</p>
-          <div class="mission-content secret-content">
-            <p id="charadeCover" class="secret-cover"><span aria-hidden="true">🤫</span> 쉿! 나만 보는 제시어</p>
-            <p id="charadeWord" class="mission-prompt" hidden></p>
-            <button id="flipCharade" class="button button-outline" type="button" aria-expanded="false">나만 제시어 보기</button>
-          </div>
-          <div class="charade-actions mission-controls"><button id="charadePass" class="button button-soft" type="button">패스</button><button id="charadeSuccess" class="button button-purple" type="button">맞혔어요 <span aria-hidden="true">✓</span></button></div>
-          <p class="self-check-note">제시어를 확인한 뒤 가리고, 준비되면 타이머를 시작해요.</p>
-        </div>
-
-        <section id="timerSection" class="game-timer-panel" aria-label="미션 타이머" hidden>
-          <p id="timerPhase" class="timer-phase">생각할 시간</p>
-          <div id="gameTimer" class="game-timer" role="timer" aria-label="남은 시간" aria-live="off">00:30</div>
-          <div class="timer-controls" role="group" aria-label="미션 타이머 제어"><button id="timerStart" type="button" class="button button-soft">시작</button><button id="timerPause" type="button" class="button button-outline" disabled>일시정지</button><button id="timerReset" type="button" class="button button-outline">리셋</button></div>
-          <button id="storyReady" class="button button-orange story-ready" type="button">말하기 시작 <span aria-hidden="true">→</span></button>
-          <p id="timerMessage" class="timer-message" role="status" aria-atomic="true">준비되면 시작 버튼을 눌러요.</p>
+      <div id="tonguePanel">
+        <div class="mission-content"><p id="tongueText" class="mission-prompt">말하기 미션을 불러오고 있어요.</p></div>
+        <section class="stopwatch-panel" aria-label="잰말놀이 초시계">
+          <p class="time-label">한 번 정확히 읽는 데 걸린 시간</p>
+          <div id="stopwatchDisplay" class="time-display" role="timer" aria-live="off" aria-label="읽는 데 걸린 시간">0.00초</div>
+          <div class="time-controls" role="group" aria-label="초시계 제어"><button id="stopwatchStart" class="button button-purple" type="button">시작</button><button id="stopwatchStop" class="button button-outline" type="button" disabled>정지</button><button id="stopwatchReset" class="button button-outline" type="button">다시 재기</button></div>
         </section>
-        <div class="mission-redraw"><button id="newCard" class="button button-outline" type="button"><span aria-hidden="true">↻</span> 다른 카드 뽑기</button></div>
-      </section>
-    </div>
+        <div class="record-area">
+          <p id="recordPrompt" hidden>정확하게 읽었나요? 정지한 뒤 기록해 보세요.</p>
+          <div id="recordForm" class="record-form" hidden>
+            <label for="readerName">이름 <span>(선택)</span><input id="readerName" type="text" maxlength="20" autocomplete="off" placeholder="비워 두면 도전자 1"></label>
+            <button id="recordAttempt" class="button button-soft" type="button" disabled>정확히 읽었어요 · 기록</button>
+          </div>
+          <p id="recordStatus" class="record-message" role="status" aria-atomic="true"></p>
+          <p id="tongueBest" class="record-note best-record">아직 기록이 없어요. 첫 번째 도전을 남겨 보세요.</p>
+          <details id="recordsDetails" class="records"><summary>이번 문장 기록</summary><ol id="tongueRecords" aria-label="이번 문장의 빠른 기록 다섯 개"></ol></details>
+          <p class="record-note">정확하게 읽었는지는 함께 확인해요.<br>기록은 이 화면을 열어 둔 동안만 남아요.</p>
+        </div>
+      </div>
 
-    <details class="game-rules"><summary>처음이라면? 함께 노는 방법</summary><ol><li>좋아하는 놀이를 고르거나 ‘미션 뽑기’로 골라요.</li><li>혼자 또는 친구와 차례대로 도전해요. 잰말놀이는 레벨과 반복 횟수를 정해요.</li><li>미션을 마치면 성공 버튼을 눌러요. 한 카드에 도장은 하나씩 모여요.</li><li>어려우면 다른 카드나 놀이로 바꿔도 괜찮아요. 여섯 칸을 채우면 모두 함께 박수!</li></ol></details>
-    <p class="game-bottom-note">시간을 다 채우지 않아도 괜찮아요. 친구의 도전에는 따뜻한 박수를!<br><a class="plain-link" href="./">1분스피치로 돌아가기</a></p>
-    <noscript><p class="game-status">놀이를 시작하려면 브라우저의 자바스크립트를 켜 주세요.</p></noscript>
+      <div id="storyPanel" hidden>
+        <div class="mission-content"><div id="storyWords" class="word-chips" aria-label="이야기에 넣을 세 단어"></div><p class="story-guide">처음에는… <span aria-hidden="true">→</span> 그런데… <span aria-hidden="true">→</span> 그래서…</p></div>
+      </div>
+
+      <div id="charadesPanel" hidden>
+        <div class="mission-content secret-content">
+          <p id="charadeCover" class="secret-cover"><span aria-hidden="true">🤫</span> 쉿! 나만 보는 제시어</p>
+          <p id="charadeWord" class="mission-prompt" hidden></p>
+          <button id="flipCharade" class="button button-outline" type="button" aria-expanded="false" aria-controls="charadeWord">나만 제시어 보기</button>
+        </div>
+      </div>
+
+      <section id="countdownSection" class="countdown-panel" aria-label="1분 미션 타이머" hidden>
+        <p class="time-label">도전하는 1분</p>
+        <div id="countdownDisplay" class="time-display" role="timer" aria-label="남은 시간" aria-live="off">01:00</div>
+        <div class="time-controls" role="group" aria-label="1분 타이머 제어"><button id="countdownStart" class="button button-purple" type="button">시작</button><button id="countdownPause" class="button button-outline" type="button" disabled>일시정지</button><button id="countdownReset" class="button button-outline" type="button">리셋</button></div>
+        <p id="countdownMessage" class="timer-message" role="status" aria-atomic="true">준비되면 시작 버튼을 눌러요.</p>
+      </section>
+    </section>
+    <p id="missionStatus" class="game-status" role="status" aria-atomic="true"></p>
+    <p class="play-note">어려우면 ‘미션 뽑기’를 다시 눌러도 괜찮아요.<br>친구의 도전에는 따뜻한 박수를!<br><a class="plain-link" href="./">1분스피치로 돌아가기</a></p>
+    <noscript><p class="game-status">미션을 시작하려면 브라우저의 자바스크립트를 켜 주세요.</p></noscript>
   </main>
   <footer class="season-footer">언어의 바다 · 말하는 즐거움을 함께 발견해요.</footer>
   <script>const halloweenData={
@@ -406,338 +372,269 @@
   'use strict';
 
   const $ = id => document.getElementById(id);
-  const data = halloweenData;
-  const names = {
-    tongue: ['유령의 잰말 놀이터', '천천히 한 번 읽고, 목표 횟수만큼 도전해요. 아이나 어른이 함께 성공을 확인해요.'],
-    story: ['마법의 단어 3개', '세 단어를 모두 넣어 나만의 이야기를 만들어요. 생각한 뒤 준비되면 말하기를 시작해요.'],
-    charades: ['몸으로 말해요', '제시어를 나만 확인하고, 친구가 맞히도록 표현해요.']
+  const pool = [
+    ...halloweenData.tongueLevels.flatMap((level, levelIndex) => level.lines.map((text, lineIndex) => ({
+      id: `tongue-${levelIndex}-${lineIndex}`, kind: 'tongue', text,
+      level: `LEVEL ${levelIndex + 1} · ${level.name}`
+    }))),
+    ...halloweenData.storySets.map((words, index) => ({ id: `story-${index}`, kind: 'story', words })),
+    ...halloweenData.charades.map((prompt, index) => ({ id: `charades-${index}`, kind: 'charades', text: prompt.text }))
+  ];
+  const labels = {
+    tongue: ['잰말놀이', '꼬이지 않게, 또박또박!', '한 번 정확하게 읽어요. 같은 문장으로 시간을 비교해요.'],
+    story: ['단어 3개 이야기', '세 단어로 어떤 이야기가 나올까요?', '세 단어를 모두 넣어 1분 동안 이야기를 만들어요.'],
+    charades: ['몸으로 말해요', '이번 제시어는 무엇일까요?', '제시어를 나만 확인하고, 친구가 맞히도록 표현해요.']
   };
-  const bags = new Map();
-  let game = 'tongue';
-  let stamps = 0;
-  let level = 0;
-  let sentence = 0;
-  let awarded = false;
+  const records = new Map();
+  let bag = [];
+  let lastIndex = -1;
+  let mission = null;
+  let renderId = null;
+  let watchState = 'idle';
+  let watchStartedAt = 0;
+  let watchElapsed = 0;
+  let recordOrder = 0;
+  let countState = 'idle';
+  let countDeadline = 0;
+  let countRemaining = 60000;
   let charadeVisible = false;
-  let charade = null;
-  let words = [];
-  let timerId = null;
-  let deadline = 0;
-  let remainingMs = 30000;
-  let timerPhase = 'prep';
-  let timerState = 'idle';
 
-  function announce(message) {
-    $('gameStatus').textContent = message;
+  function announce(text) {
+    $('missionStatus').textContent = text;
   }
 
-  function drawIndex(key, length) {
-    let bag = bags.get(key);
-    if (!bag || bag.cards.length === 0) {
-      const last = bag?.last ?? -1;
-      const cards = Array.from({ length }, (_, index) => index);
-      for (let i = cards.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [cards[i], cards[j]] = [cards[j], cards[i]];
+  function stopRendering() {
+    if (renderId !== null) clearInterval(renderId);
+    renderId = null;
+  }
+
+  function secondsText(milliseconds) {
+    return (milliseconds / 1000).toFixed(2);
+  }
+
+  function renderStopwatch() {
+    $('stopwatchDisplay').textContent = `${secondsText(watchElapsed)}초`;
+    $('stopwatchStart').disabled = watchState !== 'idle';
+    $('stopwatchStop').disabled = watchState !== 'running';
+    $('recordAttempt').disabled = watchState !== 'stopped' || Number(secondsText(watchElapsed)) <= 0;
+    $('recordForm').hidden = watchState !== 'stopped';
+    $('recordPrompt').hidden = watchState !== 'stopped';
+  }
+
+  function renderCountdown() {
+    const seconds = Math.ceil(countRemaining / 1000);
+    $('countdownDisplay').textContent = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
+    $('countdownDisplay').setAttribute('aria-label', `남은 시간 ${seconds}초`);
+    $('countdownDisplay').classList.toggle('is-urgent', seconds > 0 && seconds <= 10);
+    $('countdownStart').disabled = countState === 'running' || countState === 'paused';
+    $('countdownStart').textContent = countState === 'finished' ? '다시 시작' : '시작';
+    $('countdownPause').disabled = !['running', 'paused'].includes(countState);
+    $('countdownPause').textContent = countState === 'paused' ? '이어서 하기' : '일시정지';
+  }
+
+  function updateClocks() {
+    const now = performance.now();
+    if (watchState === 'running') {
+      watchElapsed = now - watchStartedAt;
+      renderStopwatch();
+    }
+    if (countState === 'running') {
+      countRemaining = Math.max(0, countDeadline - now);
+      if (countRemaining === 0) {
+        countState = 'finished';
+        $('countdownMessage').textContent = '1분이 끝났어요! 멋지게 도전했어요. 준비되면 새 미션을 뽑아요.';
       }
-      if (cards.length > 1 && cards.at(-1) === last) {
-        [cards[0], cards[cards.length - 1]] = [cards.at(-1), cards[0]];
+      renderCountdown();
+    }
+    if (watchState !== 'running' && countState !== 'running') stopRendering();
+  }
+
+  function startRendering() {
+    stopRendering();
+    renderId = setInterval(updateClocks, 40);
+  }
+
+  function resetStopwatch() {
+    stopRendering();
+    watchState = 'idle';
+    watchElapsed = 0;
+    watchStartedAt = 0;
+    $('recordStatus').textContent = '';
+    renderStopwatch();
+  }
+
+  function startStopwatch() {
+    if (mission.kind !== 'tongue' || watchState !== 'idle') return;
+    watchElapsed = 0;
+    watchStartedAt = performance.now();
+    watchState = 'running';
+    $('recordStatus').textContent = '한 번 정확하게 읽고 정지를 눌러요.';
+    renderStopwatch();
+    startRendering();
+  }
+
+  function stopStopwatch() {
+    if (mission.kind !== 'tongue' || watchState !== 'running') return;
+    watchElapsed = performance.now() - watchStartedAt;
+    watchState = 'stopped';
+    stopRendering();
+    $('recordStatus').textContent = '정확하게 읽었다면 기록해요. 틀렸다면 다시 재기를 눌러요.';
+    renderStopwatch();
+  }
+
+  function resetCountdown() {
+    stopRendering();
+    countState = 'idle';
+    countDeadline = 0;
+    countRemaining = 60000;
+    $('countdownMessage').textContent = '준비되면 시작을 눌러요. 시간은 자동으로 흐르지 않아요.';
+    renderCountdown();
+  }
+
+  function startCountdown() {
+    if (mission.kind === 'tongue' || !['idle', 'finished'].includes(countState)) return;
+    if (countState === 'finished') countRemaining = 60000;
+    countDeadline = performance.now() + countRemaining;
+    countState = 'running';
+    $('countdownMessage').textContent = mission.kind === 'story' ? '세 단어로 나만의 이야기를 들려줘요!' : '친구가 화면을 보지 않도록 하고 몸으로 표현해요.';
+    renderCountdown();
+    startRendering();
+  }
+
+  function toggleCountdown() {
+    if (mission.kind === 'tongue') return;
+    if (countState === 'running') {
+      countRemaining = Math.max(0, countDeadline - performance.now());
+      if (countRemaining === 0) {
+        updateClocks();
+        return;
       }
-      bag = { cards, last };
-      bags.set(key, bag);
+      countState = 'paused';
+      stopRendering();
+      $('countdownMessage').textContent = '잠깐 쉬는 중이에요. 준비되면 이어서 해요.';
+    } else if (countState === 'paused') {
+      countDeadline = performance.now() + countRemaining;
+      countState = 'running';
+      $('countdownMessage').textContent = '이어서 도전해요!';
+      startRendering();
     }
-    const index = bag.cards.pop();
-    bag.last = index;
-    return index;
+    renderCountdown();
   }
 
-  function stopTimer() {
-    if (timerId !== null) clearInterval(timerId);
-    timerId = null;
-  }
-
-  function speechDuration() {
-    return Number($('storyDuration').value) * 1000;
-  }
-
-  function phaseDuration() {
-    if (game === 'charades') return 60000;
-    return timerPhase === 'prep' ? 30000 : speechDuration();
-  }
-
-  function renderTimer() {
-    const seconds = Math.max(0, Math.ceil(remainingMs / 1000));
-    $('gameTimer').textContent = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
-    $('gameTimer').setAttribute('aria-label', `남은 시간 ${seconds}초`);
-    $('gameTimer').classList.toggle('is-urgent', seconds > 0 && seconds <= 10);
-    $('timerSection').classList.toggle('is-urgent', seconds > 0 && seconds <= 10);
-    $('timerPhase').textContent = game === 'charades' ? '몸으로 표현하는 시간' : timerPhase === 'prep' ? '생각하는 시간' : '이야기하는 시간';
-    const blocked = awarded || stamps >= 6;
-    $('timerStart').disabled = blocked || timerState === 'running';
-    $('timerStart').textContent = timerState === 'paused' ? '이어서 시작' : timerState === 'finished' ? '다시 시작' : game === 'story' && timerPhase === 'prep' ? '생각 시간 시작' : game === 'story' ? '말하기 시작' : '표현하기 시작';
-    $('timerPause').disabled = blocked || !['running', 'paused'].includes(timerState);
-    $('timerPause').textContent = timerState === 'paused' ? '이어서 하기' : '잠깐 멈추기';
-    $('timerReset').disabled = blocked;
-    $('storyReady').hidden = game !== 'story' || timerPhase !== 'prep';
-    $('storyReady').disabled = blocked;
-  }
-
-  function resetTimer(newCard = false) {
-    stopTimer();
-    if (newCard) timerPhase = game === 'charades' ? 'charades' : 'prep';
-    timerState = 'idle';
-    remainingMs = phaseDuration();
-    deadline = 0;
-    $('timerMessage').textContent = game === 'tongue' ? '' : '준비되면 시작 버튼을 눌러요. 시간은 자동으로 흐르지 않아요.';
-    renderTimer();
-  }
-
-  function finishTimer() {
-    stopTimer();
-    if (game === 'story' && timerPhase === 'prep') {
-      timerPhase = 'speech';
-      timerState = 'idle';
-      remainingMs = speechDuration();
-      $('timerMessage').textContent = '생각할 시간이 끝났어요. 준비되면 말하기 시작을 눌러요.';
-    } else {
-      remainingMs = 0;
-      timerState = 'finished';
-      $('timerMessage').textContent = game === 'story' ? '시간이 끝났어요! 이야기를 마쳤다면 이야기 다 했어요를 눌러요.' : '시간이 끝났어요! 맞혔다면 맞혔어요, 다음 제시어를 보려면 패스를 눌러요.';
-    }
-    renderTimer();
-  }
-
-  function tick() {
-    if (timerState !== 'running') return;
-    remainingMs = Math.max(0, deadline - Date.now());
-    if (remainingMs === 0) finishTimer();
-    else renderTimer();
-  }
-
-  function startTimer() {
-    if (game === 'tongue' || awarded || stamps >= 6 || timerState === 'running') return;
-    if (timerState === 'finished') remainingMs = phaseDuration();
-    timerState = 'running';
-    deadline = Date.now() + remainingMs;
-    $('timerMessage').textContent = game === 'charades' ? '친구가 화면을 보지 않는지 확인하고 몸으로 표현해요.' : timerPhase === 'prep' ? '세 단어를 연결할 이야기를 생각해요.' : '나만의 이야기를 들려줘요!';
-    stopTimer();
-    timerId = setInterval(tick, 200);
-    renderTimer();
-  }
-
-  function togglePause() {
-    if (timerState === 'paused') {
-      startTimer();
-      return;
-    }
-    if (timerState !== 'running') return;
-    remainingMs = Math.max(0, deadline - Date.now());
-    stopTimer();
-    if (remainingMs === 0) {
-      finishTimer();
-      return;
-    }
-    timerState = 'paused';
-    $('timerMessage').textContent = '잠깐 쉬는 중이에요. 준비되면 이어서 해요.';
-    renderTimer();
-  }
-
-  function startStory() {
-    if (game !== 'story' || awarded || stamps >= 6) return;
-    stopTimer();
-    timerPhase = 'speech';
-    timerState = 'idle';
-    remainingMs = speechDuration();
-    startTimer();
-  }
-
-  function renderBoard() {
-    $('stampCount').textContent = String(stamps);
-    const slots = [...$('boardProgress').children];
-    slots.forEach((slot, index) => {
-      const state = index < stamps ? 'complete' : index === stamps ? 'current' : 'waiting';
-      slot.dataset.state = state;
-      slot.classList.toggle('is-complete', state === 'complete');
-      slot.classList.toggle('is-current', state === 'current');
-      slot.setAttribute('aria-label', `${index + 1}번째 미션 ${state === 'complete' ? '완료' : state === 'current' ? '도전할 차례' : '기다리는 중'}`);
-      if (state === 'current') slot.setAttribute('aria-current', 'step');
-      else slot.removeAttribute('aria-current');
-      const number = document.createElement('span');
-      number.className = 'board-number';
-      number.textContent = state === 'complete' ? '★' : String(index + 1);
-      number.setAttribute('aria-hidden', 'true');
-      const mark = document.createElement('span');
-      mark.className = 'board-mark';
-      mark.textContent = state === 'complete' ? '완료' : state === 'current' ? '도전' : '미션';
-      slot.replaceChildren(number, mark);
-    });
-    const disabled = awarded || stamps >= 6;
-    for (const id of ['tongueSuccess', 'storySuccess', 'charadeSuccess']) $(id).disabled = disabled;
-  }
-
-  function renderTongueOptions() {
-    $('tongueSentence').replaceChildren(...data.tongueLevels[level].lines.map((line, index) => {
-      const option = document.createElement('option');
-      option.value = String(index);
-      option.textContent = `${index + 1}번 문장`;
-      return option;
+  function renderRecords() {
+    const attempts = records.get(mission.id) ?? [];
+    const sorted = [...attempts].sort((a, b) => a.seconds - b.seconds || a.order - b.order);
+    $('recordsDetails').hidden = attempts.length === 0;
+    $('readerName').placeholder = `비워 두면 도전자 ${attempts.length + 1}`;
+    $('tongueBest').textContent = sorted.length ? `이 문장 최고 기록 · ${sorted[0].seconds.toFixed(2)}초 (${sorted[0].name})` : '이 문장에 아직 기록이 없어요. 첫 도전을 시작해 보세요!';
+    $('tongueRecords').replaceChildren(...sorted.slice(0, 5).map(attempt => {
+      const item = document.createElement('li');
+      const name = document.createElement('span');
+      name.className = 'record-name';
+      name.textContent = attempt.name;
+      const time = document.createElement('strong');
+      time.className = 'record-time';
+      time.textContent = `${attempt.seconds.toFixed(2)}초`;
+      item.append(name, time);
+      return item;
     }));
-    $('tongueSentence').value = String(sentence);
-    $('tongueText').textContent = data.tongueLevels[level].lines[sentence];
-    if ($('tongueNote')) $('tongueNote').textContent = `목표는 ${$('repeatGoal').value}회! 빠르기보다 또박또박 말하는 것이 중요해요. 어려우면 다른 레벨이나 문장을 골라도 괜찮아요.`;
+  }
+
+  function recordAttempt() {
+    if (mission.kind !== 'tongue' || watchState !== 'stopped') return;
+    const seconds = Number(secondsText(watchElapsed));
+    if (seconds <= 0) return;
+    const attempts = records.get(mission.id) ?? [];
+    const name = $('readerName').value.trim().slice(0, 20) || `도전자 ${attempts.length + 1}`;
+    attempts.push({ name, seconds, order: recordOrder++ });
+    records.set(mission.id, attempts);
+    watchState = 'recorded';
+    $('readerName').value = '';
+    renderRecords();
+    renderStopwatch();
+    $('recordStatus').textContent = `${name}의 ${seconds.toFixed(2)}초를 기록했어요. 다시 도전하려면 다시 재기를 눌러요.`;
   }
 
   function renderCharade() {
-    $('charadeWord').textContent = charade?.text ?? '';
-    $('charadeWord').hidden = !charadeVisible;
     $('charadeCover').hidden = charadeVisible;
-    $('charadeCover').textContent = '제시어가 숨어 있어요. 표현하는 사람만 확인해요.';
+    $('charadeWord').hidden = !charadeVisible;
     $('flipCharade').textContent = charadeVisible ? '제시어 숨기기' : '나만 제시어 보기';
     $('flipCharade').setAttribute('aria-expanded', String(charadeVisible));
     $('flipCharade').setAttribute('aria-controls', 'charadeWord');
   }
 
-  function renderGame() {
-    $('gameTitle').textContent = names[game][0];
-    $('gameIntro').textContent = names[game][1];
-    for (const button of $('gameTabs').querySelectorAll('button[data-game]')) {
-      const active = button.dataset.game === game;
-      button.setAttribute('aria-pressed', String(active));
-      button.classList.toggle('is-active', active);
+  function nextIndex() {
+    if (bag.length === 0) {
+      bag = pool.map((_, index) => index);
+      for (let index = bag.length - 1; index > 0; index--) {
+        const other = Math.floor(Math.random() * (index + 1));
+        [bag[index], bag[other]] = [bag[other], bag[index]];
+      }
+      if (bag.length > 1 && bag.at(-1) === lastIndex) [bag[0], bag[bag.length - 1]] = [bag.at(-1), bag[0]];
     }
-    for (const name of ['tongue', 'story', 'charades']) $(`${name === 'charades' ? 'charades' : name}Panel`).hidden = game !== name;
-    $('timerSection').hidden = game === 'tongue';
-    if (game !== 'tongue') $(`${game}Panel`).querySelector('.mission-controls').before($('timerSection'));
-    if (game === 'tongue') renderTongueOptions();
-    if (game === 'story') {
-      const list = $('storyWords').matches('ul,ol');
-      $('storyWords').replaceChildren(...words.map(word => {
-        const chip = document.createElement(list ? 'li' : 'span');
-        chip.className = 'word-chip';
-        chip.textContent = word;
-        return chip;
-      }));
-    }
-    renderCharade();
-    renderBoard();
-    renderTimer();
+    lastIndex = bag.pop();
+    return lastIndex;
   }
 
-  function newCard(message = true, focus = false) {
-    stopTimer();
-    awarded = false;
+  function drawMission(initial = false) {
+    stopRendering();
+    resetStopwatch();
+    resetCountdown();
     charadeVisible = false;
-    if (game !== 'charades') charade = null;
-    if (game === 'tongue') sentence = drawIndex(`tongue-${level}`, data.tongueLevels[level].lines.length);
-    if (game === 'story') words = data.storySets[drawIndex('story', data.storySets.length)];
-    if (game === 'charades') charade = data.charades[drawIndex('charades', data.charades.length)];
-    renderGame();
-    resetTimer(true);
-    if (message) announce(stamps >= 6 ? '여섯 미션을 모두 마쳤어요! 새 게임을 누르면 다시 함께 도전할 수 있어요.' : '새 카드를 뽑았어요. 카드를 바꿔도 스탬프는 그대로예요.');
-    if (focus) $('gameTitle').focus({ preventScroll: false });
-  }
-
-  function chooseGame(next, random = false) {
-    if (!names[next] || (next === game && !random)) return;
-    game = next;
-    newCard(false, random);
-    announce(stamps >= 6 ? '여섯 미션을 모두 마쳤어요! 새 게임으로 다시 도전해요.' : `${names[game][0]} ${random ? '미션을 뽑았어요.' : '활동을 골랐어요.'} 준비되면 도전해요.`);
-  }
-
-  function awardStamp() {
-    if (awarded || stamps >= 6) return;
-    stopTimer();
-    if (timerState === 'running') {
-      remainingMs = Math.max(0, deadline - Date.now());
-      timerState = 'paused';
+    $('readerName').value = '';
+    $('recordsDetails').open = false;
+    mission = pool[nextIndex()];
+    $('missionCard').dataset.missionId = mission.id;
+    $('missionCard').dataset.kind = mission.kind;
+    $('missionType').textContent = labels[mission.kind][0];
+    $('missionLevel').hidden = mission.kind !== 'tongue';
+    $('missionLevel').textContent = mission.level ?? '';
+    $('missionTitle').textContent = labels[mission.kind][1];
+    $('missionIntro').textContent = labels[mission.kind][2];
+    for (const kind of ['tongue', 'story', 'charades']) $(`${kind}Panel`).hidden = kind !== mission.kind;
+    $('countdownSection').hidden = mission.kind === 'tongue';
+    $('tongueText').textContent = mission.kind === 'tongue' ? mission.text : '';
+    $('charadeWord').textContent = mission.kind === 'charades' ? mission.text : '';
+    const list = $('storyWords').matches('ul,ol');
+    $('storyWords').replaceChildren(...(mission.words ?? []).map(word => {
+      const chip = document.createElement(list ? 'li' : 'span');
+      chip.className = 'word-chip';
+      chip.textContent = word;
+      return chip;
+    }));
+    renderCharade();
+    if (mission.kind === 'tongue') renderRecords();
+    else {
+      $('tongueBest').textContent = '';
+      $('tongueRecords').replaceChildren();
     }
-    awarded = true;
-    stamps++;
-    renderBoard();
-    renderTimer();
-    const message = stamps === 6 ? '축하해요! 힘을 모아 여섯 미션을 모두 마쳤어요. 새 게임으로 다시 도전해요!' : `멋지게 도전했어요! 스탬프 ${stamps}개를 모았어요. 다른 카드나 미션을 골라 함께 이어 가요.`;
-    announce(message);
-    $('timerMessage').textContent = message;
-    $(stamps === 6 ? 'newGame' : 'newCard').focus({ preventScroll: true });
+    announce(`${labels[mission.kind][0]} 미션을 뽑았어요. 어려우면 다시 뽑아도 괜찮아요.`);
+    if (!initial) $('missionTitle').focus({ preventScroll: false });
   }
 
-  function newGame() {
-    if (stamps > 0 && !window.confirm('모은 스탬프를 지우고 새 게임을 시작할까요?')) return;
-    stopTimer();
-    stamps = 0;
-    bags.clear();
-    game = 'tongue';
-    level = 0;
-    $('tongueLevel').value = '0';
-    $('repeatGoal').value = '1';
-    $('storyDuration').value = '60';
-    newCard(false, true);
-    announce('새 게임을 시작했어요! 함께 여섯 미션에 도전해요.');
-  }
-
-  $('tongueLevel').replaceChildren(...data.tongueLevels.map((item, index) => {
-    const option = document.createElement('option');
-    option.value = String(index);
-    option.textContent = `LEVEL ${index + 1} · ${item.name}`;
-    return option;
-  }));
-  $('tongueLevel').value = '0';
-  $('repeatGoal').value = '1';
-  $('storyDuration').value = '60';
-  for (const button of $('gameTabs').querySelectorAll('button[data-game]')) button.addEventListener('click', () => chooseGame(button.dataset.game));
-  $('rollMission').addEventListener('click', () => chooseGame(['tongue', 'story', 'charades'][drawIndex('missions', 3)], true));
-  $('newGame').addEventListener('click', newGame);
-  $('newCard').addEventListener('click', () => newCard(true, true));
-  $('tongueLevel').addEventListener('change', () => {
-    level = Number($('tongueLevel').value);
-    newCard(false);
-    announce(`LEVEL ${level + 1} ${data.tongueLevels[level].name} 문장을 골랐어요.`);
-  });
-  $('tongueSentence').addEventListener('change', () => {
-    sentence = Number($('tongueSentence').value);
-    const bag = bags.get(`tongue-${level}`);
-    if (bag) {
-      bag.last = sentence;
-      bag.cards = bag.cards.filter(index => index !== sentence);
-    }
-    awarded = false;
-    renderTongueOptions();
-    renderBoard();
-    resetTimer(true);
-    announce('새 문장으로 도전해요. 준비되면 목표 횟수만큼 읽어요.');
-  });
-  $('repeatGoal').addEventListener('change', () => {
-    renderTongueOptions();
-    announce(awarded ? '이 카드는 이미 스탬프를 받았어요. 다른 카드를 뽑으면 새로 도전할 수 있어요.' : `목표를 ${$('repeatGoal').value}회로 바꿨어요. 준비되면 또박또박 읽어요.`);
-  });
-  $('storyDuration').addEventListener('change', () => {
-    resetTimer();
-    announce(`말하기 시간을 ${$('storyDuration').value}초로 바꿨어요. 준비되면 시작해요.`);
-  });
-  for (const id of ['tongueSuccess', 'storySuccess', 'charadeSuccess']) $(id).addEventListener('click', awardStamp);
+  $('drawMission').addEventListener('click', () => drawMission());
+  $('stopwatchStart').addEventListener('click', startStopwatch);
+  $('stopwatchStop').addEventListener('click', stopStopwatch);
+  $('stopwatchReset').addEventListener('click', resetStopwatch);
+  $('recordAttempt').addEventListener('click', recordAttempt);
+  $('countdownStart').addEventListener('click', startCountdown);
+  $('countdownPause').addEventListener('click', toggleCountdown);
+  $('countdownReset').addEventListener('click', resetCountdown);
   $('flipCharade').addEventListener('click', () => {
+    if (mission.kind !== 'charades') return;
     charadeVisible = !charadeVisible;
     renderCharade();
   });
-  $('charadePass').addEventListener('click', () => {
-    newCard(false);
-    announce('패스해도 괜찮아요! 스탬프 변화 없이 다른 제시어를 뽑았어요.');
-  });
-  $('timerStart').addEventListener('click', startTimer);
-  $('timerPause').addEventListener('click', togglePause);
-  $('timerReset').addEventListener('click', () => resetTimer());
-  $('storyReady').addEventListener('click', startStory);
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden) tick();
+    if (!document.hidden) updateClocks();
   });
+  window.addEventListener('pagehide', stopRendering);
   window.addEventListener('pageshow', () => {
-    tick();
-    if (timerState === 'running' && timerId === null) timerId = setInterval(tick, 200);
+    updateClocks();
+    if ((watchState === 'running' || countState === 'running') && renderId === null) startRendering();
   });
-  window.addEventListener('pagehide', stopTimer);
 
-  newCard(false);
-  announce('친구와 힘을 모아 여섯 미션에 도전해요. 하고 싶은 활동부터 골라도 괜찮아요!');
+  drawMission(true);
 })();
 </script>
 </body>
